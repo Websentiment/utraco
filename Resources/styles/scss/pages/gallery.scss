@@ -1,0 +1,52 @@
+﻿.gallery-grid {
+    .grid-item {
+        margin-bottom: 30px;
+
+        .contain {
+            img {
+                max-width: 100%;
+                display: block;
+                height: auto;
+            }
+
+            .gallery-overlay {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: calc(100% - 30px);
+                background-color: rgba(0,0,0,.3);
+                opacity: 0;
+                transition: opacity .2s ease-in-out;
+
+                .enlarge {
+                    height: 40px;
+                    width: 40px;
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    background-image: url(/Resources/img/enlarge.png);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            &:hover {
+                .gallery-overlay {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.lb-dataContainer {
+    padding-top: 20px !important;
+}
+
+
+.lb-data .lb-number {
+    color: #fff !important;
+    font-size: 19px !important;
+    font-weight: 700 !important;
+}

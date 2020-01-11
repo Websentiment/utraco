@@ -1,0 +1,127 @@
+﻿.behandeling-intro {
+    .btn-behandelingen {
+        margin-top: 45px;
+        display: inline-block;
+        padding: 10px 15px;
+        border: 2px solid #000;
+        color: #000;
+        transition: .5s all;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        max-width: 250px;
+        background: #fff;
+        text-transform: uppercase;
+
+        &:hover {
+            background: #000;
+            color: #fff;
+        }
+    }
+
+    .btn-last {
+        border: 2px solid #721f41;
+        background: #721f41;
+        color: #fff;
+        margin-right: 15px;
+
+        &:hover {
+            background: #fff;
+            color: #721f41;
+        }
+    }
+}
+
+.tarieven {
+    @extend %section-styling;
+
+    &:nth-child(odd) {
+        background: #f3e1de;
+    }
+
+    .b-styled {
+        b {
+            position: relative;
+            margin-bottom: 50px;
+            font-weight: 500;
+            font-size: 24px;
+            display: block;
+            text-align: center;
+
+            &:after {
+                display: block;
+                content: "";
+                height: 3px;
+                width: 55px;
+                background: #721f41;
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .treatments-list {
+        margin: 20px 0;
+
+        li {
+            margin-top: 40px;
+
+            &:first-child {
+                margin-top: inherit;
+            }
+
+            .treatments-item {
+                display: table;
+                font-weight: 700;
+
+                .title, .dots, .value {
+                    display: table-cell;
+                }
+
+                .title, .value {
+                    white-space: nowrap;
+                }
+
+                .dots {
+                    width: 100%;
+                    border-bottom: 1px dotted;
+                }
+            }
+
+            .treatments-desc {
+                display: block;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .tarieven-item {
+        display: table;
+        font-weight: 500;
+
+        .title, .dots, .value {
+            display: table-cell;
+        }
+
+        .title, .value {
+            white-space: nowrap;
+        }
+
+        .dots {
+            width: 100%;
+            border-bottom: 1px dotted;
+        }
+    }
+
+    .tarieven-desc {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}

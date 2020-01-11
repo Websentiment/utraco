@@ -1,0 +1,52 @@
+﻿
+@media only screen and (max-width: 1024px) {
+    main {
+        margin-top: 66px;
+    }
+}
+
+@media only screen and (max-width: 991.5px) {
+    .banner {
+        &.normal {
+            padding: 45px 0;
+        }
+    }
+    .errors {
+        .content {
+            width: calc(100% - 30px);
+        }
+    }
+    .banner {
+        padding: 100px 0;
+        font-size: 18px;
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .btn-default {
+        font-size: 14px;
+        min-height: 48px;
+    }
+
+    .order-confirmation {
+        .bevestiging {
+            .inner {
+                margin-bottom: 30px;
+                height: inherit;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767.5px) {
+    .form-group {
+        margin-bottom: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+}

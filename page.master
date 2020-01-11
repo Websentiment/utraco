@@ -1,0 +1,296 @@
+﻿<%@ Master Language="VB" CodeFile="page.master.vb" Inherits="page" %>
+
+<%@ Import Namespace="System.Web.Optimization" %>
+
+<!DOCTYPE html>
+<html lang="nl-nl" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="shortcut icon" type="image/x-icon" href="/Resources/img/meta-icons/favicon.png" />
+
+    <!-- APPLE METATAGS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link href="/Resources/img/meta-icons/120x120.png" rel="apple-touch-icon" />
+    <link href="/Resources/img/meta-icons/152x152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="/Resources/img/meta-icons/76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="/Resources/img/meta-icons/120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="/Resources/img/meta-icons/310x480.png" rel="apple-touch-startup-image" />
+
+    <!-- WINDOWS PHONE METATAGS-->
+    <meta name="msapplication-navbutton-color" content="#000000" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-square70x70logo" content="/Resources/img//meta-icons/70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/Resources/img/meta-icons/150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/Resources/img/meta-icons/310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/Resources/img/meta-icons/310x310.png" />
+
+    <!-- TWITTER METATAGS -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="/UI/images/meta-icons/120x120.png" />
+
+    <asp:PlaceHolder runat="server">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat:400,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+        <link rel="stylesheet" property="stylesheet" type="text/css" href="/Resources/bundels/master.min.css" />
+
+    </asp:PlaceHolder>
+
+        <!-- MailerLite Universal -->
+    <script>
+        (function (m, a, i, l, e, r) {
+            m['MailerLiteObject'] = e; function f() {
+                var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+            }
+            f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
+            var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+            _.parentNode.insertBefore(r, _);
+        })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+        var ml_account = ml('accounts', '1698512', 'q9p1p9q3t2', 'load');
+    </script>
+    <!-- End MailerLite Universal -->
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <form runat="server" class="divGlobalForm">
+
+        <div class="alert alert-danger" role="alert" runat="server" id="divError" visible="false" style="display: none;">
+            <asp:Literal runat="server" ID="ltlError" />
+        </div>
+
+        <div class="header-top" runat="server" visible="false">
+            <div class="right">
+                <a href="#" runat="server" id="aLogin"></a>
+                <a id="aCart" runat="server"><i class="fas fa-shopping-cart"></i>
+                    <span id="divWinkelmandTotal" class="total">&euro;<asp:Literal runat="server" ID="ltlTotalTop" /></span>
+                    <span>(<span class="spanCountProducts"><asp:Literal runat="server" ID="ltlCountProducts" Text="0" /></span>)</span>
+                </a>
+            </div>
+        </div>
+
+        <header>
+            <div class="hamburger">
+                <div class="inner">
+                    <div id="nav-icon2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <nav class="custom-nav">
+
+                    <a runat="server" id="aLogo" href="/" class="logo desktop">
+                        <img runat="server" id="imgLogo" src="/Resources/img/alfasite-horizontaal.png" class="img-responsive" />
+                    </a>
+
+                    <div class="nav-items">
+                        <ul>
+                            <asp:Repeater ID="repMenu" OnItemDataBound="repMenu_ItemDataBound" runat="server">
+                                <ItemTemplate>
+                                    <li runat="server" id="liFirst">
+                                        <a title='<%# Eval("sText") %>' runat="server" id="aFirst">
+                                            <asp:Literal Text='<%# Eval("sText") %>' runat="server" /></a>
+                                        <asp:Repeater ID="repSubMenu" OnItemDataBound="repSubMenu_ItemDataBound" runat="server">
+                                            <HeaderTemplate>
+                                                <div class="nav-big-down nav-products divNavProducts ">
+                                                    <ul>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+                                                <li runat="server" id="liSecond">
+                                                    <a runat="server" id="aSecond" title='<%# Eval("sText") %>'>
+                                                        <asp:Literal Text='<%# Eval("sText") %>' runat="server" /></a>
+                                                </li>
+                                                <asp:Repeater runat="server" ID="repCategories" OnItemDataBound="repCategories_ItemDataBound">
+                                                    <ItemTemplate>
+                                                        <li class="autoHeightChild">
+                                                            <a class="title" id="aTitle1" runat="server">
+                                                                <asp:Literal runat="server" Text='<%# Eval("sTitle") %>' />
+                                                            </a>
+
+                                                            <asp:Repeater ID="repSubCategories" OnItemDataBound="repSubCategories_ItemDataBound" runat="server">
+                                                                <HeaderTemplate>
+                                                                    <ul>
+                                                                </HeaderTemplate>
+                                                                <ItemTemplate>
+                                                                    <li>
+                                                                        <a id="aSub" runat="server">
+                                                                            <asp:Literal Text='<%# Eval("sTitle") %>' runat="server" />
+                                                                        </a>
+                                                                    </li>
+                                                                </ItemTemplate>
+                                                                <FooterTemplate>
+                                                                    </ul>
+                                                                </FooterTemplate>
+                                                            </asp:Repeater>
+
+                                                            <a class="look-more" id="aTitle2" runat="server">
+                                                                <asp:Literal runat="server" ID="ltlWatchAll" Text="<%$ Resources:Resource, ltlWatchAll %>" />
+                                                                <asp:Literal runat="server" Text='<%# Eval("sTitle") %>' />
+                                                            </a>
+                                                        </li>
+                                                    </ItemTemplate>
+                                                </asp:Repeater>
+                                            </ItemTemplate>
+                                            <FooterTemplate>
+                                                </ul>
+                                            </div>
+                                            </FooterTemplate>
+                                        </asp:Repeater>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ul>
+
+                        
+                        <ul class="right-nav">
+                            <li><a href="mailto: info@alfasite.nl"><i class="fas fa-envelope"></i></a></li>
+                            <li><a href="tel:0614654775"><i class="fas fa-phone"></i></a></li>
+                        </ul>
+                    </div>
+
+
+                    <ul class="right-nav" runat="server" visible="false" >
+                        <li class="shoppingcart ">
+                            <div class="inner ">
+                                <i class="fas fa-user"></i>
+                            </div>
+
+                            <div class=" shop wrapper">
+                                <div class="inside">
+                                    <h5>Mijn winkelwagen</h5>
+                                    <a href="#" id="aContact" runat="server" class="btn-default btn-orange">
+                                        Aanvragen
+                                        <div class="icon-wrapper">
+                                           <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                    <div class="mrg-top"></div>
+                                    <h5>Mijn account</h5>
+                                    <a href="#" id="a1" runat="server" class="btn-default btn-orange">
+                                        Inloggen
+                                        <div class="icon-wrapper">
+                                           <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search">
+                            <div class="inner ">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <div class="search-div wrapper ">
+                                <div class="form-group">
+                                    <asp:textbox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Zoeken..." />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar-custom" id="myBar"></div>
+            </div>
+        </header>
+
+        <main>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 contact-info">
+                        <asp:Literal ID="ltlf02" runat="server" />
+                    </div>
+                    <div class="col-lg-3 col-sm-6 company-info">
+                        <asp:Literal ID="ltlf03" runat="server" />
+                    </div>
+                    <div class="col-lg-3 col-sm-6 navigation">
+                        <asp:Literal ID="ltlf01" runat="server" />
+                    </div>
+                    <div class="col-lg-3 col-sm-6 ">
+                        <asp:Literal ID="ltlf04" runat="server" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <asp:Literal ID="ltlCopyrights" runat="server" />
+                    </div>
+                    <div class="col-sm-6 right">
+                        <asp:Literal ID="ltlLinksCopy" runat="server" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+        <div class="popup Cookies" id="PopupCookie" style="display: none;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <p><asp:Literal ID="ltlCookie" runat="server" /></p>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="/cookies">Instellingen</a>
+                        <a href="#" class="btn-default btn-orange btnAccept">
+                             Ik ga akkoord
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="loading" style="display: none">
+            <div class="loader">
+              <div class="inner one"></div>
+              <div class="inner two"></div>
+              <div class="inner three"></div>
+            </div>
+        </div>
+
+        <asp:PlaceHolder runat="server">
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+             <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/12.0.0/lazyload.min.js'></script>
+
+            <script type="text/javascript" src='/Resources/bundels/master.min.js'></script>
+            <script type="text/javascript" src='/Resources/bundels/formValidation.min.js'></script>
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            <script>
+                function recaptchaCallBack(token) {
+                    document.getElementById("hidRecaptcha").value = token;
+                }
+            </script>
+        </asp:PlaceHolder>
+
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+        
+        <asp:HiddenField runat="server" ID="hidRecaptcha" />
+        <asp:HiddenField ID="hidLanguage" runat="server" />
+
+    </form>
+</body>
+</html>

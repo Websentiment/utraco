@@ -1,0 +1,29 @@
+﻿$font-title: 'Bree Serif', serif;
+$font-main: 'Montserrat', sans-serif;
+
+$primary-color: #e61f68;
+$primary-grey: #eee;
+
+%primary-gradient {
+    height: 44px;
+    color: #fff !important;
+    padding: 0 16px;
+    display: inline-block;
+    -webkit-box-shadow: 0 4px 0 0 #d1195c;
+    box-shadow: 0 4px 0 0 #d1195c;
+    background: #e61f68;
+    line-height: 46px;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: all .15s;
+    -moz-transition: all .15s;
+    -o-transition: all .15s;
+    -ms-transition: all .15s;
+    transition: all .15s;
+    top: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    z-index: 1;
+    cursor: pointer;
+}
+
+

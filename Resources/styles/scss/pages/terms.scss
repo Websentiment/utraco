@@ -1,0 +1,80 @@
+﻿.terms {
+    padding: 75px 0;
+    font-size: 16px;
+
+    b {
+        color: $primary-color;
+    }
+
+    h4 {
+        color: $primary-color;
+        font-size: 20px;
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .divScrollSpyList {
+        /*position: fixed;*/
+    }
+
+    .list-title {
+        display: block;
+        color: $primary-color;
+        font-weight: 600;
+    }
+
+    .list-group {
+        max-width: 400px;
+        max-height: 300px;
+        margin-top: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-top: 1px solid rgba(0,0,0,.125);
+        border-bottom: 1px solid rgba(0,0,0,.125);
+        border-radius: 5px;
+
+        .list-group-item {
+            a{
+                display: block;
+            }
+            &:first-child {
+                border-top: none;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+    .list-group::-webkit-scrollbar {
+        width: 6px;
+        margin: 20px 0;
+    }
+
+    .list-group::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 6px;
+    }
+
+    .list-group::-webkit-scrollbar-thumb {
+        background: $primary-color;
+        border-radius: 6px;
+    }
+
+    .list-group::-webkit-scrollbar-thumb:hover {
+        background: $primary-color;
+    }
+
+    .bigger-bullets .bigger-bullet {
+        font-size: 3em;
+        content: '\25CF';
+    }
+}
+
+@media only screen and (max-width: 767.5px) {
+    .list-group {
+        max-width: 100% !important;
+    }
+}

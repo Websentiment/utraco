@@ -1,0 +1,58 @@
+﻿
+.brand {
+    text-align: center;
+    padding: 125px 0px;
+
+    span {
+        position: relative;
+        display: block;
+        margin-bottom: 40px;
+
+        img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            background: #721f41;
+            height: 3px;
+            width: 55px;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    p {
+        font-weight: 400;
+        max-width: 1000px;
+        margin: 0 auto 20px;
+    }
+
+    a {
+        font-weight: bold;
+    }
+
+    &:nth-child(odd) {
+        background: #f3e1de;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 767.5px) {
+    .brand {
+        padding: 50px 0;
+
+        span {
+            img {
+                width: 75%;
+            }
+        }
+    }
+
+}

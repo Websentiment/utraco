@@ -1,0 +1,284 @@
+﻿.product-detail {
+    @extend %section-styling;
+    background: #fff;
+
+    .divSlider {
+        position: relative;
+
+        .product-slider {
+            .product-image {
+                height: 300px;
+                overflow: hidden;
+
+                img {
+                    max-height: 100%;
+                }
+            }
+        }
+
+        .product-controls {
+            .product-prev, .product-next {
+                position: relative;
+                float: left;
+                content: "";
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                background: #1d1d1b;
+                /*border-radius: 50%;*/
+                /*top: 50%;*/
+                /*transform: translateY(-50%);*/
+                transition: .5s all;
+
+                &::after {
+                    position: absolute;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    font-size: 20px;
+                    color: #fff;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    transition: .5s all;
+                }
+            }
+
+            .product-prev {
+                left: 0;
+
+                &::after {
+                    content: "\f104";
+                }
+            }
+
+            .product-next {
+                right: 0;
+
+                &::after {
+                    content: "\f105";
+                }
+            }
+        }
+    }
+
+    .home {
+        margin-bottom: 40px;
+
+        #aBack {
+            position: relative;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: #f3e1de;
+
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: black;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .title {
+        color: #721f41;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        font-weight: 500;
+        position: relative;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 2px;
+            width: 100px;
+            background: #721f41;
+            bottom: 5px;
+        }
+    }
+
+    .discount {
+        .price {
+            position: relative;
+            font-weight: 600;
+        }
+
+        .old-price {
+            font-weight: normal;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: red;
+                left: 0px;
+                right: 0px;
+                margin: 0 auto;
+                top: 50%;
+                transform: translateY(-50%) rotate(-3deg);
+            }
+        }
+    }
+
+    .related {
+        img {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-size: 18px;
+            text-transform: none;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .main {
+            margin-top: 50px;
+            color: #721f41;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            font-weight: 500;
+            position: relative;
+            font-size: 20px;
+            text-transform: uppercase;
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                height: 2px;
+                width: 100px;
+                background: #721f41;
+                bottom: 5px;
+            }
+        }
+    }
+
+    .price {
+        #spanPrice {
+            font-weight: bold;
+        }
+    }
+
+    .size {
+        margin: 20px 0px;
+
+        .checkboxSizes {
+            display: inline-block;
+
+            input[type="checkbox"], input[type="radio"] {
+                display: none;
+
+                &:checked {
+                    + label {
+                        font-weight: bold;
+                        border: 2px solid black;
+                    }
+                }
+            }
+
+            label {
+                padding: 10px;
+                border: 2px solid #f7f7f7;
+                cursor: pointer;
+                min-width: 40px;
+                text-align: center;
+                text-transform: uppercase;
+                transition: .5s all;
+                margin: 0;
+            }
+        }
+    }
+
+    .options {
+        .quantity {
+            max-width: 80px;
+
+            .txtQuantity {
+                display: inline-block;
+                line-height: inherit;
+                padding: 10px;
+                background: #f7f7f7;
+                border: none;
+                max-width: 80px;
+                width: 100%;
+                margin: 0;
+                text-align: left;
+            }
+
+            .form-controls {
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+
+                input {
+                    display: block;
+                    padding: 0 10px;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    margin: 0 auto;
+                    line-height: 1;
+
+                    &:last-child {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .shoppingcart-product {
+        display: table;
+        padding: 10px 30px;
+        border: 2px solid #f3e1de;
+        background: #f3e1de;
+        font-weight: 600;
+        color: #000000 !important;
+        cursor: pointer;
+        transition: .5s all;
+        text-transform: uppercase;
+        margin-top: 15px;
+        visibility: hidden;
+        transform: scale(0);
+
+        &.active {
+            transform: scale(1);
+            visibility: visible;
+        }
+    }
+
+    .btn-checkout {
+        display: inline-block;
+        padding: 10px 30px;
+        border: 2px solid black;
+        /*background: black;*/
+        color: black !important;
+        cursor: pointer;
+        transition: .5s all;
+        text-transform: uppercase;
+
+        &:hover {
+            background: black;
+            color: white !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 767.5px) {
+    .product-detail {
+        .title {
+            margin-top: 15px;
+        }
+    }
+}

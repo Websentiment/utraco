@@ -1,0 +1,32 @@
+[
+  {
+    "outputFileName": "Resources/bundels/master.min.css",
+    "inputFiles": [
+      "Vendor/bootstrap-4.1/css/bootstrap.min.css",
+      "Vendor/formvalidation/formValidation.min.css",
+      "Resources/styles/css/main.css"
+    ]
+  },
+  {
+    "outputFileName": "Resources/bundels/master.min.js",
+    "inputFiles": [
+      "Resources/js/pages/default.js",
+      "Resources/js/jquery-cookie.js",
+      "Resources/js/cookies.js",
+      "Resources/js/main.js",
+      "Resources/js/menu.js"
+    ]
+  },
+  {
+    "outputFileName": "Resources/bundels/formValidation.min.js",
+    "inputFiles": [
+      "Vendor/formvalidation/form-validation.min.js",
+      "Vendor/formvalidation/bootstrap.min.js",
+      "Vendor/formvalidation/datevalidator.js",
+      "Resources/js/validations.js",
+      "Resources/js/pages/register.js",
+      "Resources/js/pages/SecurityQuestion.js",
+      "Resources/js/global-validation.js"
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+﻿.personeel {
+    @extend %section-styling;
+
+    .dreamteam {
+        margin-bottom: 140px;
+    }
+
+    .pItem {
+        margin-bottom: 100px;
+
+        .pImg {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .pTitle {
+            font-weight: 600;
+            display: block;
+            margin: 20px 0 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767.5px) {
+    .personeel {
+        .dreamteam {
+            margin-bottom: 50px
+        }
+
+        .pItem {
+            margin-bottom: 30px;
+
+            .pImg {
+                width: inherit;
+                height: inherit;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .pTitle {
+                margin: 20px 0;
+            }
+        }
+    }
+}
