@@ -74,7 +74,7 @@
             </div>
         </div>
 
-        <header>
+        <header runat="server" visible="false">
             <div class="hamburger">
                 <div class="inner">
                     <div id="nav-icon2">
@@ -211,7 +211,7 @@
             </asp:ContentPlaceHolder>
         </main>
 
-        <footer>
+        <footer runat="server" visible="false">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 contact-info">
@@ -230,7 +230,7 @@
             </div>
         </footer>
 
-        <div class="copy">
+        <div class="copy" runat="server" visible="false"> 
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">

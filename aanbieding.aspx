@@ -88,7 +88,7 @@
                                 </div>
 
                                 <asp:Literal ID="ltlBestelInfo" runat="server" />
-                                <asp:Button runat="server" UseSubmitBehavior="false" OnClientClick="return isBestellingValid();" ID="btnSubmit" type="button" Text="Rond de bestelling af" class="btn-default full-width" />
+                                <asp:Button runat="server" UseSubmitBehavior="false" OnClientClick="return isBestellingValid();" ID="btnSubmit" type="button" Text="Rond uw bestelling af" class="btn-default full-width" />
                             </div>
                         </div>
                     </div>
