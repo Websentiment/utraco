@@ -3,7 +3,6 @@
     "outputFileName": "Resources/bundels/master.min.css",
     "inputFiles": [
       "Vendor/bootstrap-4.1/css/bootstrap.min.css",
-      "Vendor/formvalidation/formValidation.min.css",
       "Resources/styles/css/main.css"
     ]
   },

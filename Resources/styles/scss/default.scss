@@ -1,1 +1,139 @@
-﻿
+﻿.usp {
+    text-align: center;
+
+    .customCol {
+        width: 100%;
+        min-width: 200px;
+        max-width: 225px;
+    }
+
+    .item {
+        background: #fff;
+        width: 100%;
+
+        img {
+            max-width: 60px;
+            display: block;
+            margin: 0px auto;
+        }
+
+        b {
+            font-size: 15px;
+            font-weight: 600;
+            color: $blue;
+        }
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+}
+.usp {
+        
+        .hr{
+            margin-top:-20px !important;
+        }
+}
+.information {
+    background-color: #f7f7f7 !important;
+    padding: 25px 0px 25px;
+
+    ._giveMePadding {
+        padding: 0px 75px;
+    }
+    /*.container-fluid {
+        padding: 0px 78px;
+    }*/
+    ._titleInfo {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    ._titleContactInfo {
+        font-weight: 300;
+        margin-bottom: 25px;
+
+        a {
+            color: $blue;
+
+            &:hover {
+                text-decoration: underline !important;
+            }
+        }
+    }
+
+    .innerText {
+        b {
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 14px;
+
+            b {
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            a {
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    .txtsmall {
+        font-size: 16px;
+        font-weight: bold;
+
+        .emailblue {
+            color: #000099;
+        }
+    }
+
+    .extra {
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .smallfont {
+        font-size: 13px;
+    }
+}
+
+.img-wrapper {
+    text-align: center;
+    padding: 20px;
+
+    img {
+        max-width: 170px;
+        height: auto;
+        display: inline-block;
+        margin: 0 15px;
+    }
+}
+footer{
+    font-weight:bold;
+}
+
+
+@media only screen and (max-width: 767.5px) {
+    .information {
+        .container-fluid {
+            padding: 0 15px;
+        }
+
+            img {
+                max-width: 75%;
+            }
+    }
+
+    
+
+}

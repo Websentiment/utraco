@@ -1,165 +1,41 @@
 ﻿footer {
-    position: relative;
-    background: $primary-grey;
-    padding: 75px 0px;
-    font-size: 14px;
-    /*table {
-        tr {
-            td {
-                &:first-of-type {
-                    width: 100px;
-                    font-weight: bold;
-                }
-            }
-        }
-    }*/
-    h5 {
-        font-family: $font-title;
-        font-size: 16px;
-        font-weight: bold;
-        color: $primary-color;
-        text-transform: uppercase;
-        display: block;
-        margin-bottom: 15px;
-        letter-spacing: 1px;
+    padding: 10px 0px;
+    font-size: 11px;
+
+    .container-fluid{
+        padding:0px 80px;
     }
 
-    .contact-info, .company-info {
-        ul {
-            li {
-                padding-left: 25px;
-                position: relative;
-
-                &:before {
-                    position: absolute;
-                    font-weight: 900;
-                    font-family: "Font Awesome 5 Free";
-                    left: 0;
-                    color: #404040;
-                    top: 0%;
-                }
-            }
-        }
-    }
-
-    .contact-info {
-        ul {
-            li {
-                &:nth-child(1) {
-                    &:before {
-                        content: "\f1ad";
-                    }
-                }
-
-                &:nth-child(2) {
-                    &:before {
-                        content: "\f3c5";
-                    }
-                }
-
-                &:nth-child(3) {
-                    &:before {
-                        content: "\f095";
-                    }
-                }
-
-                &:nth-child(4) {
-                    &:before {
-                        content: "\f0e0";
-                    }
-                }
-
-                &:nth-child(5) {
-                    &:before {
-                        content: "\f35d";
-                    }
-                }
-            }
-        }
-    }
-
-    .company-info {
-        ul {
-            li {
-                &:nth-child(1) {
-                    &:before {
-                        content: "\f0b1";
-                    }
-                }
-
-                &:nth-child(2) {
-                    &:before {
-                        content: "\f508";
-                    }
-                }
-
-                &:nth-child(3) {
-                    &:before {
-                        content: "\f153";
-                    }
-                }
-            }
-        }
-    }
-
-    .navigation {
-        ul {
-            li {
-                padding-left: 20px;
-                position: relative;
-
-                &:before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    background: #404040;
-                    height: 6px;
-                    width: 6px;
-                    border-radius: 50%;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-        }
-    }
-}
-
-.copy {
-    background: #404040;
-    padding: 15px 0;
-    color: #fff;
-    position: relative;
-    font-size: 14px;
-
-    a {
-        font-weight: bold;
-    }
-
-    .right {
-        text-align: right;
-    }
-}
-
-@media only screen and (max-width: 991.5px) {
-    footer {
-        padding: 50px 0px;
-        font-size: 16px;
-
-        h5 {
-            margin-bottom: 10px;
-            margin-top: 20px;
-        }
-    }
-
-}
-
-@media only screen and (max-width: 767.5px) {
-    .copy {
+    .footermenu {
         text-align: center;
 
-        .right {
-            margin-top: 10px;
-            text-align: center;
+        li {
+            display: inline-block;
+
+            a {
+                margin: 0px 8px;
+            }
+        }
+    }
+
+    .footerright {
+        text-align:right;
+
+        li {
+            display: inline-block;
+
+            a {
+                margin: 0px 8px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767.5px) {
+    footer {
+        padding: 0px;
+
+        .container-fluid {
+            padding: 0 130px;
         }
     }
 }
