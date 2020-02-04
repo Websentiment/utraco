@@ -26,11 +26,11 @@
 
                 a {
                     padding: 20px;
-                    font-weight: bolder;
+                    font-weight: 900;
                     font-size: 13px;
 
                     &.active {
-                        color: #000099;
+                        color: $blue;
                     }
                 }
             }

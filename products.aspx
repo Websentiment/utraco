@@ -46,7 +46,7 @@
                 <div class="row justify-content-between">
                     <asp:Repeater ID="repGroepen" runat="server">
                         <ItemTemplate>
-                            <div class="_productItem">
+                            <div class="product _productItem">
                                 <div class="item">
                                     <img src='<%# Eval("sColor") %>' alt='<%# "Utraco Holland " & Eval("sTitle") %>' />
                                      <div class="inner">

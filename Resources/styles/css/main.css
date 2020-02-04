@@ -164,10 +164,10 @@ header {
         display: inline-block; }
         header .nav-items ul li a {
           padding: 20px;
-          font-weight: bolder;
+          font-weight: 900;
           font-size: 13px; }
           header .nav-items ul li a.active {
-            color: #000099; }
+            color: #003576; }
 
 .hamburger {
   display: none;
