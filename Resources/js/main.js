@@ -28,6 +28,9 @@
         });
 
 
+
+
+
         $('.smooth-scroll').on('click', function (event) {
             var target = $(this.getAttribute('href'));
             if (target.length) {
