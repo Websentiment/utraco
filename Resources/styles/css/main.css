@@ -320,6 +320,10 @@ header {
 .contactcolor {
   color: white; }
 
+@media only screen and (max-width: 1520.5px) {
+  .banner._noFilter img {
+    height: 100%; } }
+
 .info {
   min-height: 50vh;
   height: 100%; }
@@ -525,6 +529,11 @@ header {
     display: block; }
     .products ul.open {
       max-height: 999px; }
+
+@media only screen and (max-width: 767.5px) {
+  ._ProItemsContainer ._giveMePadding ._productItem {
+    max-width: 30%;
+    min-width: 42%; } }
 
 .usp .ceritifcatesimage {
   max-width: 45%; }
