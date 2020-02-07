@@ -26,7 +26,7 @@
             <div class="_giveMePadding">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="_optionsTile">
                                 <h3>TOTAL Glass lubricants</h3>
                             </div>
@@ -43,7 +43,7 @@
                                 <img src="resources//img/ci2.png" alt="Alternate Text" class="smallimg" />
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="tweedechild">
                                 <div class="_boxTitle">
                                     <b>TOTAL's Kleenmold product line includes lubricants for all glass applications:</b>
@@ -121,7 +121,7 @@
             <div class="_giveMePadding">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="_optionsTile">
                                 <h3>ARKEMA France</h3>
                             </div>
@@ -140,7 +140,7 @@
                                 <img src="resources//img/Logo Arkema.png" alt="Alternate Text" class="smallimg" /> 
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="tweedechild">
                                 <div class="_boxTitle">
                                     <b>ARKEMA France products</b>
@@ -168,7 +168,7 @@
             <div class="_giveMePadding">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="_optionsTile">
                                 <h3>Get in touch</h3>
                             </div>

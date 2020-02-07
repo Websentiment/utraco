@@ -24,7 +24,7 @@
         <div class="container-fluid">
             <div class="_giveMePadding">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <div class="_titleInfo">
                             <b>Get in touch</b>
                         </div>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="innerText _Left2">
                                     <b>Address</b>
                                     <p>Smallepad 32</p>
@@ -69,7 +69,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <img src="/resources/img/utraco-kaart-arkema.png" class="img-fluid" alt="Alternate Text" />
                     </div>
                 </div>

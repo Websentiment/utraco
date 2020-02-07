@@ -10,13 +10,13 @@
         <img src="resources//img/utraco-desktop-home (1).jpg" alt="Alternate Text" />
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12">
                     <div class="_bannerTile">
                         <h1>Welcome! Allow us to introduce our company</h1>
                         <asp:Literal ID="ltl01" runat="server" />
                     </div>
                 </div>
-                <div class="col-6 offset-sm-3 text-center mt-3">                    
+                <div class="col-sm-6 offset-sm-3 text-center mt-3">                    
                     <div class="_bannerTexts">
                         <asp:Literal ID="ltl02" runat="server" />
                     </div>
@@ -28,25 +28,25 @@
     <section class="usp mt-5">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="customCol">
+                <div class="customCol-sm-6">
                     <div class="item">
                         <img src="/resources/img/erlenmeyer glass.svg" alt="Alternate Text" />  
                         <b>Chemical industry</b>
                     </div>
                 </div>
-                <div class="customCol">
+                <div class="customCol-sm-6">
                     <div class="item">
                         <img src="/resources/img/Pillen.svg" alt="Alternate Text" />   
                         <b>Pharmaceuticals and API's</b>
                     </div>
                 </div>
-                <div class="customCol">
+                <div class="customCo-sm-6">
                     <div class="item">
                         <img src="/resources/img/cutlery.svg" alt="Alternate Text" />  
                         <b>Food and feed industry</b>
                     </div>
                 </div>
-                <div class="customCol">
+                <div class="customCol-sm-6">
                     <div class="item">
                         <img src="/resources/img/make-up.svg" alt="Alternate Text" />  
                         <b>Cosmetic industry</b>
@@ -58,24 +58,9 @@
                         <b>Glass industry</b>
                    </div>
                 </div>
-                <%--<div class="col-lg-2 col-6">
-                    
-                </div>
-                <div class="col-lg-2 col-6">  
-                    
-                </div>
-                <div class="col-lg-2 col-6">
-                    
-                </div>
-                <div class="col-lg-2 col-6">
-                    
-                </div>
-               <div class="col-lg-2 col-6">
-                   
-                </div>--%>
             </div>
             <div class="row mt-5">
-                 <div class="col-12">                     
+                 <div class="col-sm-12">                     
                     <h3>Official distributor/agent for</h3>
 
                      <div class="img-wrapper">
@@ -91,7 +76,7 @@
         <div class="container-fluid">
             <div class="_giveMePadding">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <div class="_titleInfo">
                             <b>Get in touch</b>
                         </div>
