@@ -7,7 +7,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <section class="banner _shadow">
-        <img src="resources//img/utraco-desktop-home (1).jpg" alt="Alternate Text" />
+        <picture>
+                <source srcset="resources//img/Utraco-mobiel-home.jpg" media="(max-width: 415px)">
+                <source srcset="resources//img/Utraco-tablet-home.jpg" media="(max-width: 768px)">
+                <img src="resources//img/utraco-desktop-home (1).jpg" class="img-responsive " >
+            </picture>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -28,25 +32,25 @@
     <section class="usp mt-5">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="customCol-sm-6">
+                <div class="customCol">
                     <div class="item">
                         <img src="/resources/img/erlenmeyer glass.svg" alt="Alternate Text" />  
                         <b>Chemical industry</b>
                     </div>
                 </div>
-                <div class="customCol-sm-6">
+                <div class="customCol">
                     <div class="item">
                         <img src="/resources/img/Pillen.svg" alt="Alternate Text" />   
                         <b>Pharmaceuticals and API's</b>
                     </div>
                 </div>
-                <div class="customCo-sm-6">
+                <div class="customCo">
                     <div class="item">
                         <img src="/resources/img/cutlery.svg" alt="Alternate Text" />  
                         <b>Food and feed industry</b>
                     </div>
                 </div>
-                <div class="customCol-sm-6">
+                <div class="customCol">
                     <div class="item">
                         <img src="/resources/img/make-up.svg" alt="Alternate Text" />  
                         <b>Cosmetic industry</b>
@@ -69,6 +73,7 @@
                      </div>
                 </div>               
             </div>
+
         </div>
     </section>
     <br />

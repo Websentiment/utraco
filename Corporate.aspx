@@ -6,7 +6,11 @@
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <section class="banner overlay _noFilter _spacing">
-        <img src="/resources/img/Utraco-desktop-corporate.jpg" alt="Alternate Text" />
+        <picture>
+                <source srcset="resources//img/Utraco-mobiel-corporate.jpg" media="(max-width: 415px)">
+                <source srcset="resources//img/Utraco-tablet-corporate.jpg" media="(max-width: 768px)">
+                <img src="resources//img/Utraco-desktop-corporate.jpg" class="img-responsive " >
+            </picture>
         <div class="container">
             <div class="row">
                 <div class="col-12">

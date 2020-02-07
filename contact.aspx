@@ -9,7 +9,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <section class="banner overlay black-overlay2 _noFilter _spacing">
-        <img src="/resources/img/Utraco-desktop-contact.jpg" alt="Alternate Text" />
+        <picture>
+                <source srcset="resources//img/Utraco-mobiel-contact.jpg" media="(max-width: 415px)">
+                <source srcset="resources//img/Utraco-tablet-contact.jpg" media="(max-width: 768px)">
+                <img src="resources//img/Utraco-desktop-contact.jpg" class="img-responsive " >
+            </picture>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -66,7 +70,7 @@
                                 <%--<b class="smallfont"> Address</b>
                                 <p class="smallfont">Smallepad 32</p>
                                 <p class="smallfont">3811 MG Amersfoort, The Nederlands</p>--%>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -202,3 +206,4 @@
         </div>
     </section>
 </asp:Content>
+

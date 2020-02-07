@@ -9,7 +9,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <section class="banner overlay black-overlay2 _noFilter _spacing">
-        <img src="/resources/img/Utraco-desktop-industries.jpg" alt="Alternate Text" />
+        <picture>
+                <source srcset="resources//img/Utraco-mobiel-industries.jpg" media="(max-width: 415px)">
+                <source srcset="resources//img/Utraco-tablet-industries.jpg" media="(max-width: 768px)">
+                <img src="resources//img/Utraco-desktop-industries.jpg" class="img-responsive " >
+            </picture>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -20,7 +24,6 @@
             </div>
         </div>
     </section>
-
     <section class="options mt-5">
         <div class="container-fluid">
             <div class="_giveMePadding">
@@ -55,7 +58,7 @@
                                         <li>Precoats</li>
                                         <li>Blank Swabbing Lubricants</li>
                                         <li>Pressware</li>
-                                        <li>I.S. Machine lubricants</li>
+                                        <p>I.S. Machine lubricants</p>
                                         <li>Ring Dopes</li>
                                         <li>Mold Lubricants</li>
                                         <li>Blank Sprays</li>
@@ -63,52 +66,8 @@
                                         <li><p>While wordking with Kleenmold lubricants</p></li>
                                     </ul>
                                 </div>
-                                <%--<div class="row">
-                                    <div class="col-12">
-                                        <b>TOTAL's Kleenmold product line includes lubricants for all glass applications:</b>
-                                    </div>
-                                </div>--%>
-                    
-                            <%--<div class="row">
-                                <div class="col-sm-6">
-                                    <ul>
-                                    <li>Shear Sprays</li>
-                                </ul>
-                                <ul>
-                                    <li>Delivery Coatings</li>
-                                </ul>
-                                <ul>
-                                    <li>Precoats</li>
-                                </ul>
-                                <ul>
-                                    <li>Blank Swabbing Lubricants</li>
-                                </ul>
-                                <ul>
-                                    <li>Pressware</li>
-                                </ul>
-                                <ul>
-                                    <li>I.S. Machine lubricants</li>
-                                </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ul>
-                                    <li>Ring Dopes</li>
-                                </ul>
-                                <ul>
-                                    <li>Mold Lubricants</li>
-                                </ul>
-                                <ul>
-                                    <li>Blank Sprays</li>
-                                </ul>
-                                <ul>                     
-                                     <li>Swab stations for maximus performance</li>
-                                </ul>
-                                <p>While wordking with Kleenmold lubricants</p>
-                                </div>
-                                </div>--%>
-                        
-                                </div>
-                             </div>
+                              </div>
+                             </div> 
                             </div>
                         <br />
                         <hr />
