@@ -10,15 +10,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <section class="banner overlay black-overlay2 _noFilter _spacing">
         <picture>
-                <source srcset="resources//img/Utraco-mobiel-contact.jpg" media="(max-width: 415px)">
-                <source srcset="resources//img/Utraco-tablet-contact.jpg" media="(max-width: 768px)">
-                <img src="resources//img/Utraco-desktop-contact.jpg" class="img-responsive " >
+                <source id="ltlSrcMobiel" runat="server" srcset="" media="(max-width: 415px)">
+                <source id="ltlSrcTablet" runat="server" srcset="" media="(max-width: 768px)">
+                <asp:literal ID="ltlImgbanner" runat="server" />
             </picture>
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="_bannerTile"> 
-                        <h1 class="contactcolor">Contact</h1>
+                        <h1 class="contactcolor"><asp:Literal ID="ltlTitle" runat="server" /></h1>
                     </div>
                 </div>
             </div>
@@ -30,47 +30,29 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="_titleInfo">
-                            <b>Get in touch</b>
+                            <h2><asp:Literal ID="ltlContactTitle" runat="server" /></h2>
                         </div>
                         <div class="_titleContactInfo">
-                            <p>Please contact us by e-mail <a href="mailto:sales@utraco.nl">sales@utraco.nl</a> or by phone <a href="tel:+31302318444">+31 30 2318444</a></p>
-                            <%--<p class="txtsmall">Please contact us by e-mail<b class="emailblue"> sales2utraco.nl</b> or by phone<b class="emailblue"> +31 30</b></p>--%>
+                            <p><asp:Literal ID="ltlContactTitleSub" runat="server" /></p>
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
                                 <div class="innerText _Left">
-                                    <b>UTRACO HOLLAND B.V.</b>
-                                    <p><b>phone: </b><a href="tel:+31302318444">+31 30 2318444</a></p>
-                                    <p><b>E-mail: </b><a href="mailto:sales@utraco.nl">sales@utraco.nl</a></p>
+                                    <p><asp:Literal ID="ltlContactTextLeft1" runat="server" /></p>
                                 </div>
-                                <%--<b class="smallfont">UTRACO HOLLAND B.V.</b>
-                                <p class="smallfont"><b>phone:</b>+31302318444</p>
-                                <p class="smallfont"><b>E-mail:</b>sales@utraco.nl</p>--%>
                             </div>
                             <div class="col-sm-7">
                                 <div class="innerText _Right">
-                                    <b>Company data</b>
-                                    <p><b>ISO nr. </b>3242931</p>
-                                    <p><b>API reg. nr. </b>API 6137</p>
-                                    <p><b>Feed Approved Establishment nr . </b>aNL208728</p>
+                                    <p><asp:Literal ID="ltlContactTextRight1" runat="server" /></p>
                                 </div>
-                                <%--<b class="smallfont">Company data</b>
-                                <p class="smallfont"><b> ISO nr.</b> 3242931</p>
-                                <p class="smallfont"><b>API reg. nr.</b> API 6137</p>
-                                <p class="smallfont"><b>Feed Approved Establishment nr .</b> aNL208728</p>--%>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-12">
                                 <div class="innerText _Left2">
-                                    <b>Address</b>
-                                    <p>Smallepad 32</p>
-                                    <p>3811 MG Amersfoort, The Nederlands</p>
+                                    <p><asp:Literal ID="ltlContactTextLeft2" runat="server" /></p>
                                 </div>
-                                <%--<b class="smallfont"> Address</b>
-                                <p class="smallfont">Smallepad 32</p>
-                                <p class="smallfont">3811 MG Amersfoort, The Nederlands</p>--%>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -97,7 +79,7 @@
                         <div class="contact-inner">
                             <div class="row">
                                 <div class="col-sm-5">
-                                    <label>Your name(requierd)</label>
+                                    <label>Your name(required)</label>
                                     <div class="form-group">
                                         <asp:TextBox runat="server" ID="txtName" CssClass="form-control" />
                                     </div>
@@ -105,13 +87,13 @@
                                 <div class="col-sm-5 offset-sm-2">
                                     <label>Uw e-mail adres </label>
                                     <div class="form-group">
-                                        <asp:TextBox  runat="server" ID="txtEmail" CssClass="form-control" />
+                                        <asp:TextBox  runat="server" ID="txtEmail" CssClass="form-control" TextMode="Email" />
                                     </div>
                                 </div>
                                 <div class="col-sm-5">
                                     <label>Telefoonnummer</label>
                                     <div class="form-group">
-                                        <asp:TextBox runat="server" ID="txtPhone" CssClass="form-control" />
+                                        <asp:TextBox runat="server" ID="txtPhone" CssClass="form-control" TextMode="Phone"/>
                                     </div>
                                 </div>
                                 <div class="col-sm-5 offset-sm-2">
@@ -126,8 +108,7 @@
                                 <div class="col-12">
                                      <label>Bericht</label>
                                     <div class="form-group">
-                                        <textarea runat="server" id="txtbricht" class="form-control" />
-                                        <asp:TextBox runat="server" ID="TextBox1" CssClass="form-control" />
+                                        <textarea runat="server" id="txtMessage" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="col-sm-12">

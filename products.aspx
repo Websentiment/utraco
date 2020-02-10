@@ -9,23 +9,20 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
      <section class="banner overlay black-overlay2 _noFilter _Nospacing">
          <picture>
-                <source srcset="resources//img/Utraco-mobiel-products.jpg" media="(max-width: 415px)">
-                <source srcset="resources//img/Utraco-tablet-products.jpg" media="(max-width: 768px)">
-                <img src="resources//img/Utraco-desktop-products.jpg" class="img-responsive " >
+                <source id="ltlSrcMobiel" runat="server" srcset="" media="(max-width: 415px)">
+                <source id="ltlSrcTablet" runat="server" srcset="" media="(max-width: 768px)">
+                <asp:literal ID="ltlImgbanner" runat="server" />
             </picture>
         <div class="container">
             <div class="row">
                 <div class="col-12">
                      <div class="_bannerTile">
-                        <h1>Our products group</h1>
+                        <h1><asp:Literal ID="ltlTitle" runat="server" /></h1>
                     </div>
                 </div>
                 <div class="col-12 mt-4">
                     <div class="_bannerTexts white">
-                        <p>
-                            From acrylics to thiochemicals, browse below for Utraco's major product
-                            groups(listed in alphabetical order under each industry group)
-                        </p>
+                        <p><asp:Literal ID="ltlTitleSub" runat="server" /></p>
                     </div>
                </div>
             </div>
@@ -36,8 +33,8 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <div class="_pageTitleProText">
-                        <h1> Our producy list includes:</h1>
-                        <p>(Chech back regulary for additions and updats)</p>
+                        <h2><asp:Literal ID="ltlInfoTitle" runat="server" /></h2>
+                        <p><asp:Literal ID="ltlInfoTitleSub" runat="server" /></p>
                     </div>
                 </div>
             </div>

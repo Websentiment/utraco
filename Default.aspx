@@ -8,21 +8,20 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <section class="banner _shadow">
         <picture>
-                <source srcset="resources//img/Utraco-mobiel-home.jpg" media="(max-width: 415px)">
-                <source srcset="resources//img/Utraco-tablet-home.jpg" media="(max-width: 768px)">
-                <img src="resources//img/utraco-desktop-home (1).jpg" class="img-responsive " >
+                <source id="ltlSrcMobiel" runat="server" srcset="" media="(max-width: 415px)">
+                <source id="ltlSrcTablet" runat="server" srcset="" media="(max-width: 768px)">
+                <asp:literal ID="ltlImgbanner" runat="server" />
             </picture>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="_bannerTile">
-                        <h1>Welcome! Allow us to introduce our company</h1>
-                        <asp:Literal ID="ltl01" runat="server" />
+                        <h1><asp:Literal ID="ltlTitle" runat="server" /></h1>
                     </div>
                 </div>
                 <div class="col-sm-6 offset-sm-3 text-center mt-3">                    
                     <div class="_bannerTexts">
-                        <asp:Literal ID="ltl02" runat="server" />
+                        <asp:Literal ID="ltlTitleSub" runat="server" />
                     </div>
                 </div>
             </div>
@@ -65,8 +64,7 @@
             </div>
             <div class="row mt-5">
                  <div class="col-sm-12">                     
-                    <h3>Official distributor/agent for</h3>
-
+                    <h2>Official distributor/agent for</h2>
                      <div class="img-wrapper">
                          <img src="/resources/img/ci2.png" alt="Alternate Text" />
                         <img src="/resources/img/Logo Arkema.jpg" alt="Alternate Text" />
@@ -83,46 +81,28 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="_titleInfo">
-                            <b>Get in touch</b>
+                            <h2><asp:Literal ID="ltlContactTitle" runat="server" /></h2>
                         </div>
                         <div class="_titleContactInfo">
-                            <p>Please contact us by e-mail <a href="mailto:sales@utraco.nl">sales@utraco.nl</a> or by phone <a href="tel:+31302318444">+31 30 2318444</a></p>
-                            <%--<p class="txtsmall">Please contact us by e-mail<b class="emailblue"> sales2utraco.nl</b> or by phone<b class="emailblue"> +31 30</b></p>--%>
+                            <p><asp:Literal ID="ltlContactTitleSub" runat="server" /></p>
                         </div>
                         <div class="row">
                             <div class="col-sm-5">
                                 <div class="innerText _Left">
-                                    <b>UTRACO HOLLAND B.V.</b>
-                                    <p><b>phone: </b><a href="tel:+31302318444">+31 30 2318444</a></p>
-                                    <p><b>E-mail: </b><a href="mailto:sales@utraco.nl">sales@utraco.nl</a></p>
+                                    <p><asp:Literal ID="ltlContactTextLeft1" runat="server" /></p>
                                 </div>
-                                <%--<b class="smallfont">UTRACO HOLLAND B.V.</b>
-                                <p class="smallfont"><b>phone:</b>+31302318444</p>
-                                <p class="smallfont"><b>E-mail:</b>sales@utraco.nl</p>--%>
                             </div>
                             <div class="col-sm-7">
                                 <div class="innerText _Right">
-                                    <b>Company data</b>
-                                    <p><b>ISO nr. </b>3242931</p>
-                                    <p><b>API reg. nr. </b>API 6137</p>
-                                    <p><b>Feed Approved Establishment nr . </b>aNL208728</p>
+                                    <p><asp:Literal ID="ltlContactTextRight1" runat="server" /></p>
                                 </div>
-                                <%--<b class="smallfont">Company data</b>
-                                <p class="smallfont"><b> ISO nr.</b> 3242931</p>
-                                <p class="smallfont"><b>API reg. nr.</b> API 6137</p>
-                                <p class="smallfont"><b>Feed Approved Establishment nr .</b> aNL208728</p>--%>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="innerText _Left2">
-                                    <b>Address</b>
-                                    <p>Smallepad 32</p>
-                                    <p>3811 MG Amersfoort, The Nederlands</p>
+                                    <p><asp:Literal ID="ltlContactTextLeft2" runat="server" /></p>
                                 </div>
-                                <%--<b class="smallfont"> Address</b>
-                                <p class="smallfont">Smallepad 32</p>
-                                <p class="smallfont">3811 MG Amersfoort, The Nederlands</p>--%>
                             </div>
                         </div>
                     </div>

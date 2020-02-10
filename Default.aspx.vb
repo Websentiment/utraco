@@ -27,6 +27,7 @@ Partial Class _Default
             PI.sPI(Page, sLanguage, sQs, False, False, True, sParentPage)
 
             Dim P As New clsPage
+
             'aContact.HRef = P.sPageUrlByGuid(sLanguage, "5724127d-b971-4318-b12c-4b92482fee60")
             'aRequest.HRef = P.sPageUrlByGuid(sLanguage, "f6a7b79e-b9ff-4470-ae8d-3bb029eafadd")
 
@@ -58,7 +59,18 @@ Partial Class _Default
             'ddlNat.DataBind()
             'ddlNat.Items.Insert(0, New ListItem("Maak uw keuze...", 0))
 
+            Dim IMG As New clsImages
+            IMG.dt = IMG.sImageByPageAndTussTypeAndsSoort(sQs, "_pages", iTaalID, "ltlSrcMobiel")
+            If IMG.dt.Rows.Count > 0 Then
+                IMG.dr = IMG.dt.Rows(0)
+                ltlSrcMobiel.Attributes.Add("srcset", IMG.dr.Item("sSmall").Replace("~/", sURL()))
+            End If
 
+            IMG.dt = IMG.sImageByPageAndTussTypeAndsSoort(sQs, "_pages", iTaalID, "ltlSrcTablet")
+            If IMG.dt.Rows.Count > 0 Then
+                IMG.dr = IMG.dt.Rows(0)
+                ltlSrcTablet.Attributes.Add("srcset", IMG.dr.Item("sSmall").Replace("~/", sURL()))
+            End If
 
         End If
     End Sub

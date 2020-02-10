@@ -61,18 +61,18 @@ function isContactValid2() {
     if (fv.isValidField('ctl00$ContentPlaceHolder1$txtPhone') === false) {
         bOk = false;
     }
-    var v = grecaptcha.getResponse();
-    if (v.length === 0) {
-        bOk = false;
-        if (!$(".spanVal")[0]) {
-            $("<span class='captcha-contact help-block'>Toon aan dat u geen robot bent</span>").insertAfter(".g-recaptcha");
-        }
-    }
-    else {
-        $(".spanVal").remove();
-    }
+    //var v = grecaptcha.getResponse();
+    //if (v.length === 0) {
+    //    bOk = false;
+    //    if (!$(".spanVal")[0]) {
+    //        $("<span class='captcha-contact help-block'>Toon aan dat u geen robot bent</span>").insertAfter(".g-recaptcha");
+    //    }
+    //}
+    //else {
+    //    $(".spanVal").remove();
+    //}
     if (bOk) {
-        __doPostBack('ctl00$ContentPlaceHolder1$btnSubmit1', '')
+        __doPostBack('ctl00$ContentPlaceHolder1$btnSubmit1', '');
     } else {
         return false;
     }
