@@ -324,6 +324,14 @@ header {
   .banner._noFilter img {
     height: 100%; } }
 
+@media only screen and (max-width: 375.5px) {
+  .usp {
+    margin: 0px 80px; } }
+
+@media only screen and (max-width: 375.5px) {
+  .usp {
+    margin: 0px 130px; } }
+
 .info {
   min-height: 50vh;
   height: 100%; }
