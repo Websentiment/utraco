@@ -83,6 +83,24 @@ footer {
   .information img {
     max-width: 75%; } }
 
+@media only screen and (max-width: 767.5px) {
+  .tweedechild .col-12 {
+    text-align: center;
+    font-size: 10px; }
+  .tweedechild p {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px; } }
+
+@media only screen and (max-width: 731.5px) {
+  ._bannerTile {
+    margin-top: -15%; } }
+
+@media only screen and (max-width: 731.5px) {
+  ._bannerTexts {
+    text-align: center; } }
+
 .checkbox, .radio {
   margin-top: 0px; }
 
@@ -320,18 +338,6 @@ header {
 .contactcolor {
   color: white; }
 
-@media only screen and (max-width: 1520.5px) {
-  .banner._noFilter img {
-    height: 100%; } }
-
-@media only screen and (max-width: 375.5px) {
-  .usp {
-    margin: 0px 80px; } }
-
-@media only screen and (max-width: 375.5px) {
-  .usp {
-    margin: 0px 130px; } }
-
 .info {
   min-height: 50vh;
   height: 100%; }
@@ -468,6 +474,10 @@ header {
   .container-fluid .smallimage {
     max-width: 40%; } }
 
+@media only screen and (max-width: 767.5px) {
+  .banner img {
+    height: 100%; } }
+
 .banner ._bannerTexts.white {
   margin-top: 20px;
   width: 100%;
@@ -537,11 +547,6 @@ header {
     display: block; }
     .products ul.open {
       max-height: 999px; }
-
-@media only screen and (max-width: 767.5px) {
-  ._ProItemsContainer ._giveMePadding ._productItem {
-    max-width: 30%;
-    min-width: 42%; } }
 
 .usp .ceritifcatesimage {
   max-width: 45%; }

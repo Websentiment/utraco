@@ -30,6 +30,18 @@
                 repGroepen.DataBind()
             End If
 
+            Dim IMG As New clsImages
+            IMG.dt = IMG.sImageByPageAndTussTypeAndsSoort(sQs, "_pages", iTaalID, "ltlSrcMobiel")
+            If IMG.dt.Rows.Count > 0 Then
+                IMG.dr = IMG.dt.Rows(0)
+                ltlSrcMobiel.Attributes.Add("srcset", IMG.dr.Item("sSmall").Replace("~/", sURL()))
+            End If
+
+            IMG.dt = IMG.sImageByPageAndTussTypeAndsSoort(sQs, "_pages", iTaalID, "ltlSrcTablet")
+            If IMG.dt.Rows.Count > 0 Then
+                IMG.dr = IMG.dt.Rows(0)
+                ltlSrcTablet.Attributes.Add("srcset", IMG.dr.Item("sSmall").Replace("~/", sURL()))
+            End If
 
             'sBreadcrumbs(ltlBreadCrumps)
         End If
