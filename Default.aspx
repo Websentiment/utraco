@@ -31,31 +31,31 @@
     <section class="usp mt-5">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="customCol">
+                <div class="col-lg col-6">
                     <div class="item">
                         <img src="/resources/img/erlenmeyer glass.svg" alt="Alternate Text" />  
                         <b>Chemical industry</b>
                     </div>
                 </div>
-                <div class="customCol">
+                <div class="col-lg col-6">
                     <div class="item">
                         <img src="/resources/img/Pillen.svg" alt="Alternate Text" />   
                         <b>Pharmaceuticals and API's</b>
                     </div>
                 </div>
-                <div class="customCo">
+                <div class="col-lg col-6">
                     <div class="item">
                         <img src="/resources/img/cutlery.svg" alt="Alternate Text" />  
                         <b>Food and feed industry</b>
                     </div>
                 </div>
-                <div class="customCol">
+                <div class="col-lg col-6">
                     <div class="item">
                         <img src="/resources/img/make-up.svg" alt="Alternate Text" />  
                         <b>Cosmetic industry</b>
                     </div>
                 </div>
-                <div class="customCol">
+                <div class="col-lg col-6">
                     <div class="item">
                         <img src="/resources/img/wijn fles.svg" alt="Alternate Text" />   
                         <b>Glass industry</b>

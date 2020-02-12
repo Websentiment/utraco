@@ -11,7 +11,7 @@
          <picture>
                 <source id="ltlSrcMobiel" runat="server" srcset="" media="(max-width: 415px)">
                 <source id="ltlSrcTablet" runat="server" srcset="" media="(max-width: 768px)">
-                <asp:literal ID="ltlImgbanner" runat="server" />
+                <asp:literal ID="ltlImgbanner" runat="server"  />
             </picture>
         <div class="container">
             <div class="row">
@@ -47,7 +47,7 @@
                 <div class="row justify-content-between">
                     <asp:Repeater ID="repGroepen" runat="server">
                         <ItemTemplate>
-                            <div class="product _productItem">
+                            <div class="col-lg col-6">
                                 <div class="item">
                                     <img src='<%# Eval("sColor") %>' alt='<%# "Utraco Holland " & Eval("sTitle") %>' />
                                      <div class="inner">

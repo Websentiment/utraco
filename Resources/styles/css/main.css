@@ -94,10 +94,6 @@ footer {
     padding: 15px; } }
 
 @media only screen and (max-width: 731.5px) {
-  ._bannerTile {
-    margin-top: -15%; } }
-
-@media only screen and (max-width: 731.5px) {
   ._bannerTexts {
     text-align: center; } }
 
@@ -301,10 +297,6 @@ header {
           header .nav-items ul li a:after {
             display: none; } }
 
-@media only screen and (max-width: 767.5px) {
-  .container-fluid img {
-    max-width: 225px; } }
-
 .form-group textarea {
   min-height: 150px !important; }
 
@@ -344,6 +336,8 @@ header {
   .info ._infoTile h3 {
     font-weight: bold;
     text-align: center; }
+  .info ._infoTile h2 {
+    text-align: center; }
   .info ._infoDescription {
     width: 56%;
     margin: auto; }
@@ -359,6 +353,8 @@ header {
   /*.container {
         max-width: 93%;
     }*/ }
+  .options img {
+    max-width: 25%; }
   .options ._giveMePadding {
     padding: 0px 50px 0px; }
   .options ._optionsTile {
@@ -385,26 +381,7 @@ header {
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   width: 100%;
   padding: 20px;
-  overflow: hidden;
-  /*.row {
-        margin-left: 0px !important;
-
-        ul {
-            padding: 1px;
-            list-style: none;
-            font-weight: normal;
-
-            li::before {
-                width: 7px;
-                content: "";
-                background: #f00;
-                margin-right: 10px;
-                display: inline-block;
-                height: 7px;
-                border-radius: 50%;
-            }
-        }
-    }*/ }
+  overflow: hidden; }
   .tweedechild ._boxTitle {
     margin-bottom: 20px; }
     .tweedechild ._boxTitle b {
@@ -441,24 +418,7 @@ header {
 
 .touch {
   background-color: #f7f7f7;
-  padding: 40px 0;
-  /*.container {
-        max-width: 93%;
-    }
-
-    .emailblue {
-        color: #009;
-    }
-
-    h3 {
-        font-weight: 600 !important;
-    }
-    p{
-        font-weight:bold;
-    }*/ }
-
-.smallimg {
-  max-width: 25%; }
+  padding: 40px 0; }
 
 @media only screen and (max-width: 767.5px) {
   .tweedechild .col-12 {
@@ -738,11 +698,9 @@ main {
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    /*
-        height: 180%;
-        object-fit: cover;*/
     opacity: 0.5; }
   .banner h1 {
     text-align: center;

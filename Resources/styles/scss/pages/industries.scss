@@ -3,6 +3,9 @@
 }
 
 .options {
+    img{
+        max-width:25%;
+    }
     /*.container {
         max-width: 93%;
     }*/
@@ -100,25 +103,6 @@
             }
         }
     }
-    /*.row {
-        margin-left: 0px !important;
-
-        ul {
-            padding: 1px;
-            list-style: none;
-            font-weight: normal;
-
-            li::before {
-                width: 7px;
-                content: "";
-                background: #f00;
-                margin-right: 10px;
-                display: inline-block;
-                height: 7px;
-                border-radius: 50%;
-            }
-        }
-    }*/
     p {
         font-weight: normal;
         font-size: 16px;
@@ -127,24 +111,8 @@
 .touch {
     background-color: #f7f7f7;
     padding: 40px 0;
-    /*.container {
-        max-width: 93%;
-    }
-
-    .emailblue {
-        color: #009;
-    }
-
-    h3 {
-        font-weight: 600 !important;
-    }
-    p{
-        font-weight:bold;
-    }*/
 }
-.smallimg{
-    max-width:25%;
-}
+
 
 @media only screen and (max-width: 767.5px) {
     .tweedechild {

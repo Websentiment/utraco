@@ -9,7 +9,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <section class="banner overlay">
-        <img src="/resources/img/Utraco-Industries.jpg" alt="Alternate Text" />
+        <img src="/resources/img/Utraco-Industries.jpg" alt="Alternate Text"  />
         <div class="container">
             <div class="row">
                 <div class="col-12">
