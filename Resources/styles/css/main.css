@@ -568,7 +568,7 @@ body {
   overflow-x: hidden; }
 
 body {
-  font-family: "HelveticaNeue";
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 100;
   background-color: #fff;
