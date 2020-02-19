@@ -30,8 +30,9 @@
                         <h2><asp:Literal ID="ltlInfoTitle" runat="server" /></h2>
                     </div>
                 </div>
-
+                
                 <div class="col-sm-12">
+             
                     <div class="_infoDescription">
                         <p><asp:Literal ID="ltlInfoDescription" runat="server" /></p>
                     </div>

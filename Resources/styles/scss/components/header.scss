@@ -8,9 +8,9 @@
 
 
     img {
-        max-width: 21%;
+        max-width: 30%;
         height: auto;
-        margin: 8px;
+        margin: 10px;
     }
 
     .nav-items {
@@ -20,7 +20,7 @@
 
 
         ul {
-            margin-top: 20px;
+            margin-top: 40px;
 
             li {
                 display: inline-block;
@@ -28,7 +28,7 @@
                 a {
                     padding: 20px;
                     font-weight: 900;
-                    font-size: 13px;
+                    font-size: 17px;
 
                     &.active {
                         color: $blue;

@@ -11,9 +11,9 @@
     background: #fff;
     width: 100%; }
     .usp .item img {
-      max-width: 60px;
+      max-width: 50px;
       display: block;
-      margin: 0px auto; }
+      margin: 10px auto; }
     .usp .item b {
       font-size: 15px;
       font-weight: 600;
@@ -24,17 +24,21 @@
     font-weight: 600;
     font-size: 25px; }
 
+.usp .giveMeSize {
+  font-size: 25px;
+  font-weight: 600; }
+
 .usp .hr {
   margin-top: -20px !important; }
 
 .information {
   background-color: #f7f7f7 !important;
-  padding: 25px 0px 25px;
-  /*.container-fluid {
-        padding: 0px 78px;
-    }*/ }
-  .information ._giveMePadding {
-    padding: 0px 75px; }
+  padding: 25px 0px 25px; }
+  .information .giveImageSize {
+    max-width: 80%;
+    margin: 0px 19%; }
+  .information .container-fluid {
+    padding: 0px 78px; }
   .information ._titleInfo {
     font-size: 40px;
     margin-bottom: 10px; }
@@ -42,17 +46,18 @@
     font-weight: 300;
     margin-bottom: 25px; }
     .information ._titleContactInfo a {
-      color: #003576; }
+      color: #003576;
+      font-weight: 600; }
       .information ._titleContactInfo a:hover {
         text-decoration: underline !important; }
   .information .innerText b {
     font-size: 16px;
-    font-weight: 900; }
+    font-weight: 600; }
   .information .innerText p {
-    font-size: 14px; }
+    font-size: 16px; }
     .information .innerText p b {
-      font-size: 14px;
-      font-weight: 500; }
+      font-size: 16px;
+      font-weight: 600; }
     .information .innerText p a:hover {
       color: #003576; }
   .information .txtsmall {
@@ -76,12 +81,6 @@
 
 footer {
   font-weight: bold; }
-
-@media only screen and (max-width: 767.5px) {
-  .information .container-fluid {
-    padding: 0 15px; }
-  .information img {
-    max-width: 75%; } }
 
 @media only screen and (max-width: 767.5px) {
   .tweedechild .col-12 {
@@ -110,14 +109,14 @@ footer {
     visibility: hidden;
     position: absolute; }
     .checkbox input[type=checkbox]:checked + label::before {
-      background: #e61f68 !important; }
+      background: #003576 !important; }
   .checkbox label {
     position: relative;
     padding-left: 25px !important;
     margin: 0px !important;
     cursor: pointer; }
     .checkbox label a {
-      color: #e61f68; }
+      color: #003576; }
     .checkbox label:before {
       content: "";
       display: inline-block;
@@ -140,7 +139,7 @@ footer {
     visibility: hidden;
     position: absolute; }
     .radio input[type=radio]:checked + label::before {
-      background: #e61f68 !important; }
+      background: #003576 !important; }
   .radio label {
     position: relative;
     padding-left: 25px !important;
@@ -166,21 +165,21 @@ header {
   z-index: 2;
   background: #fff; }
   header img {
-    max-width: 21%;
+    max-width: 30%;
     height: auto;
-    margin: 8px; }
+    margin: 10px; }
   header .nav-items {
     position: relative;
     float: right;
     padding: 10px; }
     header .nav-items ul {
-      margin-top: 20px; }
+      margin-top: 40px; }
       header .nav-items ul li {
         display: inline-block; }
         header .nav-items ul li a {
           padding: 20px;
           font-weight: 900;
-          font-size: 13px; }
+          font-size: 17px; }
           header .nav-items ul li a.active {
             color: #003576; }
 
@@ -300,44 +299,56 @@ header {
 .form-group textarea {
   min-height: 150px !important; }
 
-.contactpage {
-  /*.container-fluid {
-        padding: 0px 78px;
-    }*/ }
-  .contactpage ._giveMePadding {
-    padding: 0px 60px; }
-  .contactpage .form-group {
-    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); }
-  .contactpage label {
-    font-weight: bold; }
-  .contactpage .col-lg-4 input {
-    background-color: #000099;
-    color: #f7f7f7;
-    font-size: 18px;
-    border-radius: 10px;
-    width: 100%;
-    height: 145%; }
+.contactpage .container-fluid {
+  padding: 0px 78px; }
 
-.informationcontact {
-  /*.container-fluid {
-        padding: 0px 78px;
-    }*/ }
-  .informationcontact.information {
-    background: #fff !important; }
+.contactpage .giveMeMargin {
+  margin: 0px auto 25px;
+  font-weight: 600; }
+
+.contactpage .form-group {
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); }
+
+.contactpage label {
+  font-weight: bold;
+  margin: 0px auto 25px; }
+
+.contactpage .col-lg-4 input {
+  background-color: #000099;
+  color: #f7f7f7;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 45%;
+  height: 175%; }
+
+.contactpage .checkbox {
+  margin: 0px auto 10px; }
+
+.informationcontact .giveImageSize {
+  max-width: 80%;
+  margin: 0px 19%; }
+
+.informationcontact.information {
+  background: #fff !important; }
+
+.informationcontact ._giveMePadding {
+  padding: 0px 78px; }
 
 .contactcolor {
   color: white; }
 
 .info {
-  min-height: 50vh;
+  min-height: 55vh;
   height: 100%; }
   .info ._infoTile h3 {
     font-weight: bold;
     text-align: center; }
   .info ._infoTile h2 {
-    text-align: center; }
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 0px 0px; }
   .info ._infoDescription {
     width: 56%;
     margin: auto; }
@@ -356,7 +367,7 @@ header {
   .options img {
     max-width: 25%; }
   .options ._giveMePadding {
-    padding: 0px 50px 0px; }
+    padding: 10px 50px 10px; }
   .options ._optionsTile {
     margin-bottom: 20px; }
     .options ._optionsTile h3 {
@@ -367,7 +378,8 @@ header {
     .options ._optionsDes p:nth-child(2) {
       margin-top: 40px; }
   .options ._optionsDes a {
-    color: #003576; }
+    color: #003576;
+    font-weight: 600; }
   .options ._optionsImg {
     margin-top: 20px; }
     .options ._optionsImg img {
@@ -393,7 +405,11 @@ header {
     width: 100%; }
     .tweedechild ._boxTexts ul li {
       position: relative;
-      padding-left: 15px; }
+      padding-left: 15px;
+      /*&:nth-child(n+6) {
+                    width: 115%;
+                    margin-left: -15%;
+                }*/ }
       .tweedechild ._boxTexts ul li::before {
         position: absolute;
         top: 10px;
@@ -407,9 +423,6 @@ header {
         border-radius: 50%; }
       .tweedechild ._boxTexts ul li:nth-child(-n+6) {
         width: 85%; }
-      .tweedechild ._boxTexts ul li:nth-child(n+6) {
-        width: 115%;
-        margin-left: -15%; }
       .tweedechild ._boxTexts ul li:last-child::before {
         display: none; }
   .tweedechild p {
@@ -438,6 +451,18 @@ header {
   .banner img {
     height: 100%; } }
 
+@media only screen and (max-width: 375.5px) {
+  .contactpage .container-fluid {
+    padding: 0px 10px; } }
+
+@media only screen and (max-width: 375.5px) {
+  .information .container-fluid {
+    padding: 0 10px; } }
+
+@media only screen and (max-width: 375.5px) {
+  .options ._giveMePadding {
+    padding: 0px 0px 0px; } }
+
 .banner ._bannerTexts.white {
   margin-top: 20px;
   width: 100%;
@@ -450,10 +475,11 @@ header {
   position: relative;
   text-align: center; }
 
-._pageTitlePro ._pageTitleProText h1 {
+._pageTitlePro ._pageTitleProText h2 {
   font-size: 25px;
   color: #003576;
-  font-weight: 900; }
+  font-weight: 900;
+  padding: 0px 0px 9px; }
 
 ._pageTitlePro ._pageTitleProText p {
   font-weight: normal;
@@ -496,10 +522,10 @@ header {
   .item img {
     max-width: 60px;
     display: block;
-    margin: 0px auto; }
+    margin: 0px auto 15px; }
 
 .products {
-  padding-bottom: 100px; }
+  padding-bottom: 170px; }
   .products ul {
     max-height: 130px;
     overflow: hidden;
@@ -509,17 +535,15 @@ header {
       max-height: 999px; }
 
 .usp .ceritifcatesimage {
-  max-width: 45%; }
-
-.usp p {
-  font-weight: bold; }
-
-.usp a {
-  font-weight: bold; }
+  max-width: 45%;
+  margin: 20px auto; }
 
 .ceritifcatesimageul {
   display: flex;
   margin: 0px 25%; }
+
+.gviemewidth {
+  min-height: 60vh; }
 
 /*------------------------------------*    #Reset and default
 \*------------------------------------*/
@@ -561,7 +585,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%; }
 
 main {
-  margin-top: 75px; }
+  margin-top: 100px; }
 
 .form-group {
   position: relative; }
@@ -569,9 +593,9 @@ main {
     display: none !important;
     visibility: hidden; }
   .form-group.has-error .form-control {
-    border: 1px solid #e61f68; }
+    border: 1px solid #003576; }
   .form-group.has-error .help-block {
-    color: #e61f68;
+    color: #003576;
     padding-left: 20px;
     margin-top: 7px;
     display: block;
@@ -599,7 +623,7 @@ main {
     border: none;
     font-size: 14px; }
     .form-group .form-control:focus {
-      border: 1px solid #e61f68; }
+      border: 1px solid #003576; }
     .form-group .form-control:disabled {
       background-color: #F2F2F2;
       cursor: not-allowed; }
@@ -715,10 +739,9 @@ main {
     line-height: 1.2; }
 
 footer {
-  padding: 10px 0px;
-  font-size: 11px; }
-  footer .container-fluid {
-    padding: 0px 80px; }
+  padding: 17px 55px;
+  font-size: 11px;
+  border-top: 1px solid #f2f2f2; }
   footer .footermenu {
     text-align: center; }
     footer .footermenu li {

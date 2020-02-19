@@ -3,14 +3,14 @@
 }
 
 .options {
-    img{
-        max-width:25%;
+    img {
+        max-width: 25%;
     }
     /*.container {
         max-width: 93%;
     }*/
     ._giveMePadding {
-        padding: 0px 50px 0px
+        padding: 10px 50px 10px
     }
 
     ._optionsTile {
@@ -33,6 +33,7 @@
 
         a {
             color: $blue;
+            font-weight: 600;
         }
     }
 
@@ -90,10 +91,10 @@
                     width: 85%;
                 }
 
-                &:nth-child(n+6) {
+                /*&:nth-child(n+6) {
                     width: 115%;
                     margin-left: -15%;
-                }
+                }*/
 
                 &:last-child {
                     &::before {
@@ -143,3 +144,21 @@
             }
         }
 }
+@media only screen and (max-width: 375.5px) {
+    .contactpage .container-fluid {
+        padding: 0px 10px;
+    }
+}
+
+
+    @media only screen and (max-width: 375.5px) {
+        .information .container-fluid {
+            padding: 0 10px;
+        }
+ }
+
+@media only screen and (max-width: 375.5px) {
+    .options ._giveMePadding {
+        padding: 0px 0px 0px;
+    }
+    }

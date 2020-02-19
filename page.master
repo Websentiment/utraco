@@ -186,20 +186,22 @@
 
         <footer runat="server" visible="false">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6 contact-info">
-                        <asp:Literal ID="ltlf02" runat="server" />
+
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 contact-info">
+                            <asp:Literal ID="ltlf02" runat="server" />
+                        </div>
+                        <div class="col-lg-3 col-sm-6 company-info">
+                            <asp:Literal ID="ltlf03" runat="server" />
+                        </div>
+                        <div class="col-lg-3 col-sm-6 navigation">
+                            <asp:Literal ID="ltlf01" runat="server" />
+                        </div>
+                        <div class="col-lg-3 col-sm-6 ">
+                            <asp:Literal ID="ltlf04" runat="server" />
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 company-info">
-                        <asp:Literal ID="ltlf03" runat="server" />
-                    </div>
-                    <div class="col-lg-3 col-sm-6 navigation">
-                        <asp:Literal ID="ltlf01" runat="server" />
-                    </div>
-                    <div class="col-lg-3 col-sm-6 ">
-                        <asp:Literal ID="ltlf04" runat="server" />
-                    </div>
-                </div>
+                
             </div>
         </footer>
 

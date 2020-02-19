@@ -12,7 +12,7 @@
         <picture>
                 <source id="ltlSrcMobiel" runat="server" srcset="" media="(max-width: 415px)">
                 <source id="ltlSrcTablet" runat="server" srcset="" media="(max-width: 768px)">
-                <asp:literal ID="ltlImgbanner" runat="server"  />
+                <asp:literal ID="ltlImgbanner" runat="server" />
             </picture>
         <div class="container">
             <div class="row">
@@ -26,8 +26,8 @@
     </section>
     <section class="information informationcontact mt-4">
         <div class="container-fluid">
-            <div class="_giveMePadding">
-                <div class="row">
+            
+                <div class="row align-items-center ">
                     <div class="col-sm-6">
                         <div class="_titleInfo">
                             <h2><asp:Literal ID="ltlContactTitle" runat="server" /></h2>
@@ -56,12 +56,13 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <img src="/resources/img/utraco-kaart-arkema.png" class="img-fluid" alt="Alternate Text" />
+                        <img src="/resources/img/utraco-kaart-arkema.png" class="giveImageSize" alt="Alternate Text" />
                     </div>
                 </div>
-            </div>
+
         </div>
     </section>
+   
 
     <section class="contactpage">
         <div class="container-fluid">
@@ -71,7 +72,7 @@
                         <div class="title">
                             <asp:Literal ID="ltl02" runat="server" />
                             <br />
-                            <h2>Contact form</h2>
+                            <h2 class="giveMeMargin">Contact form</h2>
                         </div>
 
                     </div>
@@ -79,21 +80,21 @@
                         <div class="contact-inner">
                             <div class="row">
                                 <div class="col-sm-5">
-                                    <label>Your name(required)</label>
+                                    <label>UW Naam(required)</label>
                                     <div class="form-group">
-                                        <asp:TextBox runat="server" ID="txtName" CssClass="form-control" />
+                                        <asp:TextBox runat="server" ID="txtName" placeholder="Uw Naam" CssClass="form-control" />
                                     </div>
                                 </div>
                                 <div class="col-sm-5 offset-sm-2">
                                     <label>Uw e-mail adres </label>
                                     <div class="form-group">
-                                        <asp:TextBox  runat="server" ID="txtEmail" CssClass="form-control" TextMode="Email" />
+                                        <asp:TextBox  runat="server" ID="txtEmail" placeholder="UW email" CssClass="form-control" TextMode="Email" />
                                     </div>
                                 </div>
                                 <div class="col-sm-5">
                                     <label>Telefoonnummer</label>
                                     <div class="form-group">
-                                        <asp:TextBox runat="server" ID="txtPhone" CssClass="form-control" TextMode="Phone"/>
+                                        <asp:TextBox runat="server" ID="txtPhone" placeholder="UW TelefoonNummer" CssClass="form-control" TextMode="Phone"/>
                                     </div>
                                 </div>
                                 <div class="col-sm-5 offset-sm-2">
@@ -108,7 +109,7 @@
                                 <div class="col-12">
                                      <label>Bericht</label>
                                     <div class="form-group">
-                                        <textarea runat="server" id="txtMessage" class="form-control" />
+                                        <textarea placeholder="Uw Bericht" runat="server" id="txtMessage" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -124,11 +125,11 @@
                              
                             </div>
                                 </div>
-                                <br />
+                                
                                 <div class="col-lg-4">
                                     <asp:Button runat="server" ID="btnSubmit1" Text="Verzenden" CssClass="btn-default btn-orange" UseSubmitBehavior="false" OnClientClick="return isContactValid2()" />
                                  </div>
-                            
+                                <br />
                             </div>
                        
                         </div>
@@ -185,6 +186,9 @@
                 </div>
             </div>
         </div>
+        <br />
     </section>
 </asp:Content>
+
+
 

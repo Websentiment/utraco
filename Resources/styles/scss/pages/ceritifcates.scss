@@ -1,18 +1,16 @@
 ﻿.usp {
+    
+
     .ceritifcatesimage {
         max-width: 45%;
-    }
-
-    p {
-        font-weight: bold;
-    }
-
-    a {
-        font-weight: bold;
+        margin: 20px auto;
     }
 }
 .ceritifcatesimageul {
     display: flex;
     margin: 0px 25%;
+}
+.gviemewidth {
+    min-height: 60vh;
 }
 

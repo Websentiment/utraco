@@ -5,11 +5,13 @@
 }
 
 .contactpage {
-    /*.container-fluid {
+    .container-fluid {
         padding: 0px 78px;
-    }*/
-    ._giveMePadding {
-        padding: 0px 60px;
+    }
+
+    .giveMeMargin {
+        margin: 0px auto 25px;
+        font-weight: 600;
     }
 
     .form-group {
@@ -20,27 +22,38 @@
 
     label {
         font-weight: bold;
+        margin: 0px auto 25px;
     }
 
     .col-lg-4 {
         input {
             background-color: #000099;
             color: #f7f7f7;
-            font-size: 18px;
-            border-radius: 10px;
-            width: 100%;
-            height: 145%;
+            font-size: 15px;
+            border-radius: 5px;
+            width: 45%;
+            height: 175%;
         }
+    }
+
+    .checkbox {
+        margin: 0px auto 10px;
     }
 }
 .informationcontact {
+    .giveImageSize {
+        max-width: 80%;
+        margin: 0px 19%;
+    }
+
     &.information {
         background: #fff !important;
     }
 
-    /*.container-fluid {
+
+    ._giveMePadding {
         padding: 0px 78px;
-    }*/
+    }
 }
 .contactcolor{
     color:white;

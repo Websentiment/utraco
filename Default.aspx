@@ -64,7 +64,7 @@
             </div>
             <div class="row mt-5">
                  <div class="col-sm-12">                     
-                    <h2>Official distributor/agent for</h2>
+                    <h2 class="giveMeSize">Official distributor/agent for</h2>
                      <div class="img-wrapper">
                          <img src="/resources/img/ci2.png" alt="Alternate Text" />
                         <img src="/resources/img/Logo Arkema.jpg" alt="Alternate Text" />
@@ -78,7 +78,7 @@
     <section class="information">
         <div class="container-fluid">
             <div class="_giveMePadding">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-sm-6">
                         <div class="_titleInfo">
                             <h2><asp:Literal ID="ltlContactTitle" runat="server" /></h2>
@@ -106,8 +106,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <img src="/resources/img/utraco-kaart-arkema.png" class="img-fluid" alt="Alternate Text" />
+                    <div class="col-sm-6">
+                        <img src="/resources/img/utraco-kaart-arkema.png" class="giveImageSize" alt="Alternate Text" />
                     </div>
                 </div>
             </div>
