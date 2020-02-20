@@ -13,4 +13,9 @@
 .gviemewidth {
     min-height: 60vh;
 }
-
+@media only screen and (max-width:768px) {
+    .ceritifcatesimageul img{
+        max-width: 90% !important;
+        margin: 20px auto;
+    }
+    }
