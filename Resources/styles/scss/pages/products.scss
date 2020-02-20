@@ -30,6 +30,18 @@
     }
 }
 ._ProItemsContainer {
+    ._title {
+        color: $blue;
+        font-weight:bold;
+        margin:8px;
+    }
+
+    .read-more {
+        color: $blue;
+        font-weight:bold;
+        
+    }
+
     ._giveMePadding {
         padding: 0px 70px;
 
@@ -40,16 +52,6 @@
 
             .item {
                 width: 100%;
-
-                ._title {
-                    color: $blue !important;
-
-                    b {
-                        color: $blue !important;
-                    }
-
-                    margin-bottom: 10px;
-                }
             }
         }
     }
@@ -86,13 +88,17 @@
 
 .products {
     padding-bottom: 170px;
+
     ul {
         max-height: 130px;
         overflow: hidden;
         position: relative;
         display: block;
+        transition: 0.3s all ease-in-out;
+        margin:12px;
 
-        &.open{
+
+        &.open {
             max-height: 999px;
         }
     }

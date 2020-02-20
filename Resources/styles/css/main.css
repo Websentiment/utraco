@@ -515,6 +515,15 @@ header {
   font-weight: normal;
   font-size: 17px; }
 
+._ProItemsContainer ._title {
+  color: #003576;
+  font-weight: bold;
+  margin: 8px; }
+
+._ProItemsContainer .read-more {
+  color: #003576;
+  font-weight: bold; }
+
 ._ProItemsContainer ._giveMePadding {
   padding: 0px 70px; }
   ._ProItemsContainer ._giveMePadding ._productItem {
@@ -523,11 +532,6 @@ header {
     min-width: 20%; }
     ._ProItemsContainer ._giveMePadding ._productItem .item {
       width: 100%; }
-      ._ProItemsContainer ._giveMePadding ._productItem .item ._title {
-        color: #003576 !important;
-        margin-bottom: 10px; }
-        ._ProItemsContainer ._giveMePadding ._productItem .item ._title b {
-          color: #003576 !important; }
 
 .producttext {
   font-size: 26px;
@@ -560,7 +564,9 @@ header {
     max-height: 130px;
     overflow: hidden;
     position: relative;
-    display: block; }
+    display: block;
+    transition: 0.3s all ease-in-out;
+    margin: 12px; }
     .products ul.open {
       max-height: 999px; }
 
@@ -775,8 +781,8 @@ main {
     line-height: 1.2; }
 
 footer {
-  padding: 17px 55px;
-  font-size: 11px;
+  padding: 17px 59px;
+  font-size: 12px;
   border-top: 1px solid #f2f2f2; }
   footer .footermenu {
     text-align: center; }
@@ -793,6 +799,7 @@ footer {
 
 @media only screen and (max-width: 767.5px) {
   footer {
+    font-size: 14px;
     padding: 0px; } }
 
 @media only screen and (max-width: 375px) {
