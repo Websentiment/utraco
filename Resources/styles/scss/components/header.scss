@@ -200,6 +200,7 @@
                     a {
                         padding: 15px 20px;
                         color: black;
+                        
 
                         &.active {
                             font-weight: bold;
@@ -215,4 +216,31 @@
         }
     }
 
+}
+@media only screen and (max-width:375.5px){
+    header{
+        img{
+            max-width:270px !important;
+            margin-top:20px;
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    header {
+        a {
+            padding: 18px !important;
+            font-weight: 900;
+            font-size: 11px !important;
+        }
+
+        img {
+            max-width: 30%;
+            height: auto;
+            margin: 0px;
+            margin-top: 4%;
+        }
+        ul{
+            margin-top:25px !important;
+        }
+    }
 }

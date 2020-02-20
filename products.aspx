@@ -63,7 +63,7 @@
                                             </ul>
                                         </div>
 
-                                    <a href="#" class="read-more JSmore">Lees Meer</a>       
+                                    <a href="#" class="read-more JSmore">Toon Meer</a>       
                                 </div>
                             </div>
                             <%--<div class="product col-lg-2 col-6">

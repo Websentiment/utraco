@@ -97,6 +97,13 @@
         }
     }
 }
-
+@media only screen and (max-width:768px){
+    ._giveMePadding {
+        padding: 0px 0px !important;
+        }
+    .item{
+        margin:20px;
+    }
+    }
 
 

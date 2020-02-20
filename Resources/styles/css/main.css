@@ -96,6 +96,18 @@ footer {
   ._bannerTexts {
     text-align: center; } }
 
+@media only screen and (max-width: 731.5px) {
+  .item {
+    width: 70% !important; }
+  .giveImageSize {
+    max-width: 80%;
+    margin: 0 8% !important; }
+  .img-wrapper img {
+    max-width: 170px;
+    height: auto;
+    display: inline-block;
+    margin: 10px 29px !important; } }
+
 .checkbox, .radio {
   margin-top: 0px; }
 
@@ -295,6 +307,24 @@ header {
             color: blue; }
           header .nav-items ul li a:after {
             display: none; } }
+
+@media only screen and (max-width: 375.5px) {
+  header img {
+    max-width: 270px !important;
+    margin-top: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  header a {
+    padding: 18px !important;
+    font-weight: 900;
+    font-size: 11px !important; }
+  header img {
+    max-width: 30%;
+    height: auto;
+    margin: 0px;
+    margin-top: 4%; }
+  header ul {
+    margin-top: 25px !important; } }
 
 .form-group textarea {
   min-height: 150px !important; }
@@ -534,6 +564,12 @@ header {
     .products ul.open {
       max-height: 999px; }
 
+@media only screen and (max-width: 768px) {
+  ._giveMePadding {
+    padding: 0px 0px !important; }
+  .item {
+    margin: 20px; } }
+
 .usp .ceritifcatesimage {
   max-width: 45%;
   margin: 20px auto; }
@@ -757,6 +793,12 @@ footer {
 
 @media only screen and (max-width: 767.5px) {
   footer {
-    padding: 0px; }
-    footer .container-fluid {
-      padding: 0 130px; } }
+    padding: 0px; } }
+
+@media only screen and (max-width: 375px) {
+  footer p {
+    text-align: center !important;
+    margin: 10px; }
+  footer ul {
+    text-align: center;
+    margin: 10px; } }

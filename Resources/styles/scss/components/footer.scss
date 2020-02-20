@@ -37,8 +37,19 @@
     footer {
         padding: 0px;
 
-        .container-fluid {
-            padding: 0 130px;
+        
+    }
+}
+@media only screen and (max-width: 375px){
+    footer {
+        p {
+            text-align: center !important;
+            margin: 10px;
+        }
+
+        ul {
+            text-align: center;
+            margin: 10px;
         }
     }
 }
