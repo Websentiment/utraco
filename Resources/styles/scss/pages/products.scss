@@ -95,7 +95,7 @@
         position: relative;
         display: block;
         transition: 0.3s all ease-in-out;
-        margin:12px;
+        
 
 
         &.open {
@@ -111,5 +111,12 @@
         margin:20px;
     }
     }
+@media only screen and (max-width:768px){
+    ._ProItemsContainer .read-more {
+        display: block;
+        font-weight: bold;
+        margin: 12px;
+    }
+}
 
 

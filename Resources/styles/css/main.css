@@ -318,7 +318,7 @@ header {
   header a {
     padding: 18px !important;
     font-weight: 900;
-    font-size: 11px !important; }
+    font-size: 17px !important; }
   header img {
     max-width: 30%;
     height: auto;
@@ -386,7 +386,8 @@ header {
     .info ._infoDescription p {
       font-weight: normal;
       font-size: 15px;
-      text-align: center; }
+      text-align: center;
+      padding: 30px !important; }
 
 @media only screen and (max-width: 768px) {
   .info ._infoDescription {
@@ -574,8 +575,7 @@ header {
     overflow: hidden;
     position: relative;
     display: block;
-    transition: 0.3s all ease-in-out;
-    margin: 12px; }
+    transition: 0.3s all ease-in-out; }
     .products ul.open {
       max-height: 999px; }
 
@@ -584,6 +584,12 @@ header {
     padding: 0px 0px !important; }
   .item {
     margin: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  ._ProItemsContainer .read-more {
+    display: block;
+    font-weight: bold;
+    margin: 12px; } }
 
 .usp .ceritifcatesimage {
   max-width: 45%;
