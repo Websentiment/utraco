@@ -32,14 +32,15 @@
 ._ProItemsContainer {
     ._title {
         color: $blue;
-        font-weight:bold;
-        margin:8px;
+        font-weight: bold;
+        margin: 8px;
     }
 
     .read-more {
         color: $blue;
-        font-weight:bold;
-        
+        font-weight: bold;
+        display: block;
+        margin: 10px;
     }
 
     ._giveMePadding {

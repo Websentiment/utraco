@@ -532,7 +532,9 @@ header {
 
 ._ProItemsContainer .read-more {
   color: #003576;
-  font-weight: bold; }
+  font-weight: bold;
+  display: block;
+  margin: 10px; }
 
 ._ProItemsContainer ._giveMePadding {
   padding: 0px 70px; }
