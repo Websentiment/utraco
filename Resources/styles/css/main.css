@@ -498,6 +498,10 @@ header {
   .options ._giveMePadding {
     padding: 0px 0px 0px; } }
 
+@media only screen and (max-width: 768px) {
+  .options img {
+    max-width: 50% !important; } }
+
 .banner ._bannerTexts.white {
   margin-top: 20px;
   width: 100%;
