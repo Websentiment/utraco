@@ -298,7 +298,8 @@ header {
       padding: 100px 0 0px; }
       header .nav-items ul li {
         border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-        display: block; }
+        display: block;
+        font-size: 40px; }
         header .nav-items ul li a {
           padding: 15px 20px;
           color: black; }
@@ -386,6 +387,10 @@ header {
       font-weight: normal;
       font-size: 15px;
       text-align: center; }
+
+@media only screen and (max-width: 768px) {
+  .info ._infoDescription {
+    width: 100%; } }
 
 .banner {
   z-index: -1; }
