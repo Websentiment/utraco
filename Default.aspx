@@ -6,12 +6,37 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div class="widget-messenger">
+        <div class="chatboxcon">
+            <div>
+                <div class="closebtncon">
+                    <span class="closebtn">&times;</span>
+                </div>
+                <div class="col-lg-7">
+                    <div class="textbox">
+                        <b>Utraco</b>
+                        <p>Hallo!</p> 
+                        <p>Heeft u een probleem? Dan nemen wij zo snel mogelijk contact op.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="btnberichtversturen">
+                        <i class="fab fa-facebook-messenger"></i>
+                        chat bericht sturen
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="messengerbtncon">
+            <i class="fab fa-facebook-messenger"></i>
+        </div>
+    </div>
     <section class="banner _shadow">
         <picture>
                 <source id="ltlSrcMobiel" runat="server" srcset="" media="(max-width: 415px)">
                 <source id="ltlSrcTablet" runat="server" srcset="" media="(max-width: 768px)">
                 <asp:literal ID="ltlImgbanner" runat="server" />
-            </picture>
+        </picture>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
