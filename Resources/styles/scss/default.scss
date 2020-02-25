@@ -42,33 +42,73 @@
     right: 40px;
     bottom: 30px;
     z-index: 1;
+    transform: scale3d(0,0,0);
+    transition: transform .3s ease-in-out;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 
     .chatboxcon {
         background-color: white;
-        border-radius: 40px;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        width: calc(100vw - 40px);
+        max-width: 400px;
+        min-height: 280px;
         padding: 20px;
-        margin-bottom: 15px;
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,.5);
+        transform: scale3d(0,0,0);
+        opacity: 0;
+        transition: opacity .4s ease-out,transform 0s linear .3s;
 
         .closebtncon {
-            text-align: end;
+            display: block;
+            position: static;
+            width: 100%;
+            height: 55px;
+            padding: 0 26px;
 
-            .closebtn {
-                font-size: 28px;
-                padding-right: 10px;
+            img{
+                width: 118px;
+            }
 
-                &:hover {
-                    opacity: 0.7;
-                    cursor: pointer;
+            .closebtninnercon {
+                /*display: flex;*/
+                position: absolute;
+                top: 18px;
+                right: 24px;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                background: #000;
+                color: #fff;
+                text-align: center;
+                opacity: .4;
+                cursor: pointer;
+                transition: opacity .3s ease-out;
+                -webkit-tap-highlight-color: transparent;
+
+                .closebtn {
+                    font-size: 24px;
+
+                    &:hover {
+                        opacity: 0.7;
+                        cursor: pointer;
+                    }
                 }
             }
         }
 
         .textbox {
             background-color: #e2e2e2;
-            padding: 8px;
-            padding-left: 20px;
-            border-radius: 20px;
-            margin-bottom: 11px;
+            padding: 20px 22px;
+            border-radius: 0px 32px 32px;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+            margin: 15px 26px 23px;
 
             b {
                 font-weight: bold;
@@ -81,17 +121,30 @@
             color: #fff;
             border-radius: 10px;
             padding: 5px;
+            cursor: pointer;
+            transition: 2s linear;
 
             &:hover {
                 opacity: 0.7;
-                cursor: pointer;
+            }
+
+            i {
+                margin-right: 5px;
             }
         }
+    }
+
+    .active {
+        opacity: 1;
+        transform: scale3d(1,1,1);
+        transition: opacity .2s ease-out,transform 0s linear;
     }
 
     .messengerbtncon {
         display: inline-block;
         float: right;
+        transition: background-color .2s linear;
+        -webkit-tap-highlight-color: transparent;
 
         .fab {
             padding: 8px;
@@ -111,6 +164,11 @@
             color: white;
         }
     }
+}
+
+.show {
+    transform: scale3d(1,1,1);
+    transition: transform .5s cubic-bezier(.18,.89,.32,1.28);
 }
 
 .usp {

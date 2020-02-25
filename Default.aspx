@@ -3,27 +3,30 @@
 <%@ Import Namespace="System.Web.Optimization" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="Server">
+    <script type="text/javascript" src="/Resources/js/widgets/Facebookwidget.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="widget-messenger">
         <div class="chatboxcon">
-            <div>
-                <div class="closebtncon">
+            <div class="closebtncon">
+                <img src="/Resources/img/Facebook-Messenger.png" />
+                <div class="closebtninnercon">
                     <span class="closebtn">&times;</span>
                 </div>
-                <div class="col-lg-7">
-                    <div class="textbox">
-                        <b>Utraco</b>
-                        <p>Hallo!</p> 
-                        <p>Heeft u een probleem? Dan nemen wij zo snel mogelijk contact op.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="btnberichtversturen">
-                        <i class="fab fa-facebook-messenger"></i>
-                        chat bericht sturen
-                    </div>
+            </div>
+            <div class="textbox">
+                <b>Utraco</b>
+                <br />
+                Hallo, Heeft u een probleem?
+                <br />
+                Dan nemen wij zo snel mogelijk contact op.
+                <br />
+            </div>
+            <div>
+                <div class="btnberichtversturen">
+                    <i class="fab fa-facebook-messenger"></i>
+                    Start Chat
                 </div>
             </div>
         </div>
