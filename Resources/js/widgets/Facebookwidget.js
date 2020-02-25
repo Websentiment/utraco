@@ -8,4 +8,8 @@
     });
 
     $(".widget-messenger").addClass("show");
+
+    $(".btnberichtversturen").click(function () {
+        window.open("https://www.google.com/");
+    });
 });
