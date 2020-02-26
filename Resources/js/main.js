@@ -4,9 +4,9 @@
         $(this).parent().find("ul").toggleClass("open");
 
         if ($(this).parent().find("ul").hasClass('open')) {
-            $(this).text('Toon minder');
+            $(this).html('Read less <i class="fas fa-chevron-up"></i>');
         } else {
-            $(this).text('Toon meer');
+            $(this).html('Read more <i class="fas fa-chevron-down"></i>');
         }
 
         var myLazyLoad = new LazyLoad({

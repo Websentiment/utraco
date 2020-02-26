@@ -259,7 +259,6 @@ main{
     h1 {
         text-align: center;
         font-weight: bold;
-        font-size: 28px;
     }
     /*.col-12 {
         p {
@@ -284,6 +283,10 @@ main{
         margin: 3px auto;
         font-size: 15px;
         line-height: 1.2;
+
+        b{
+            font-weight: bold;
+        }
     }
 }
 

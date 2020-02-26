@@ -3,9 +3,7 @@
         &.white {
             margin-top: 20px;
             width: 100%;
-            max-width: 50%;
-            margin: auto;
-            font-size: 13px;
+            font-size: 18px;
             font-weight: normal;
             color: #fff;
             z-index: 2;
@@ -17,7 +15,7 @@
 ._pageTitlePro {
     ._pageTitleProText {
         h2 {
-            font-size: 25px;
+            font-size: 30px;
             color: $blue;
             font-weight: 900;
             padding: 0px 0px 9px;
@@ -37,10 +35,14 @@
     }
 
     .read-more {
-        color: $blue;
+        color: $red;
         font-weight: bold;
         display: block;
         margin: 10px;
+
+        i{
+            margin-left: 10px;
+        }
     }
 
     ._giveMePadding {
@@ -57,6 +59,17 @@
         }
     }
 }
+
+._giveMePadding {
+    .col-lg {
+        &:nth-of-type(3), &:nth-of-type(4), &:last-of-type {
+            a{
+                display: none;
+            }
+        }
+    }
+}
+
 .producttext {
     font-size: 26px;
     color: white;

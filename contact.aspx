@@ -76,29 +76,23 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-8">
                         <div class="contact-inner">
                             <div class="row">
                                 <div class="col-sm-5">
-                                    <label>UW Naam(required)</label>
+                                    <label>Your Name(required)</label>
                                     <div class="form-group">
-                                        <asp:TextBox runat="server" ID="txtName" placeholder="Uw Naam" CssClass="form-control" />
+                                        <asp:TextBox runat="server" ID="txtName" placeholder="Your Name" CssClass="form-control" />
                                     </div>
                                 </div>
                                 <div class="col-sm-5 offset-sm-2">
-                                    <label>Uw e-mail adres </label>
+                                    <label>Your Email </label>
                                     <div class="form-group">
-                                        <asp:TextBox  runat="server" ID="txtEmail" placeholder="UW email" CssClass="form-control" TextMode="Email" />
+                                        <asp:TextBox  runat="server" ID="txtEmail" placeholder="Your Email" CssClass="form-control" TextMode="Email" />
                                     </div>
                                 </div>
                                 <div class="col-sm-5">
-                                    <label>Telefoonnummer</label>
-                                    <div class="form-group">
-                                        <asp:TextBox runat="server" ID="txtPhone" placeholder="UW TelefoonNummer" CssClass="form-control" TextMode="Phone"/>
-                                    </div>
-                                </div>
-                                <div class="col-sm-5 offset-sm-2">
-                                    <label>Soort contact</label>
+                                    <label>How can we help you?</label>
                                     <div class="form-group">
                                         <asp:DropDownList ID="ddlSoort" runat="server" CssClass="form-control">
                                             <asp:ListItem selected="True" Text="---" Value="1"></asp:ListItem>
@@ -106,10 +100,16 @@
                                         </asp:DropDownList>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                     <label>Bericht</label>
+                                <div class="col-sm-5 offset-sm-2">
+                                    <label>Subject</label>
                                     <div class="form-group">
-                                        <textarea placeholder="Uw Bericht" runat="server" id="txtMessage" class="form-control" />
+                                        <asp:TextBox runat="server" ID="txtPhone" placeholder="Subject" CssClass="form-control" TextMode="Phone"/>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                     <label>Your Message</label>
+                                    <div class="form-group">
+                                        <textarea placeholder="Your Message" runat="server" id="txtMessage" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -127,7 +127,7 @@
                                 </div>
                                 
                                 <div class="col-lg-4">
-                                    <asp:Button runat="server" ID="btnSubmit1" Text="Verzenden" CssClass="btn-default btn-orange" UseSubmitBehavior="false" OnClientClick="return isContactValid2()" />
+                                    <asp:Button runat="server" ID="btnSubmit1" Text="Send" CssClass="btn-default btn-orange" UseSubmitBehavior="false" OnClientClick="return isContactValid2()" />
                                  </div>
                                 <br />
                             </div>

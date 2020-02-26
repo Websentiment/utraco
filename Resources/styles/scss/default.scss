@@ -16,7 +16,7 @@
 
 
         img {
-            max-width: 50px;
+            max-width: 70px;
             display: block;
             margin: 10px auto;
         }
@@ -230,6 +230,10 @@
             b {
                 font-size: 16px;
                 font-weight: 600;
+
+                &:first-of-type{
+                    font-size:20px;
+                }
             }
 
             a {

@@ -11,7 +11,7 @@
     background: #fff;
     width: 100%; }
     .usp .item img {
-      max-width: 50px;
+      max-width: 70px;
       display: block;
       margin: 10px auto; }
     .usp .item b {
@@ -159,6 +159,8 @@
     .information .innerText p b {
       font-size: 16px;
       font-weight: 600; }
+      .information .innerText p b:first-of-type {
+        font-size: 20px; }
     .information .innerText p a:hover {
       color: #003576; }
   .information .txtsmall {
@@ -605,9 +607,7 @@ header {
 .banner ._bannerTexts.white {
   margin-top: 20px;
   width: 100%;
-  max-width: 50%;
-  margin: auto;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: normal;
   color: #fff;
   z-index: 2;
@@ -615,7 +615,7 @@ header {
   text-align: center; }
 
 ._pageTitlePro ._pageTitleProText h2 {
-  font-size: 25px;
+  font-size: 30px;
   color: #003576;
   font-weight: 900;
   padding: 0px 0px 9px; }
@@ -630,10 +630,12 @@ header {
   margin: 8px; }
 
 ._ProItemsContainer .read-more {
-  color: #003576;
+  color: #E4022E;
   font-weight: bold;
   display: block;
   margin: 10px; }
+  ._ProItemsContainer .read-more i {
+    margin-left: 10px; }
 
 ._ProItemsContainer ._giveMePadding {
   padding: 0px 70px; }
@@ -643,6 +645,9 @@ header {
     min-width: 20%; }
     ._ProItemsContainer ._giveMePadding ._productItem .item {
       width: 100%; }
+
+._giveMePadding .col-lg:nth-of-type(3) a, ._giveMePadding .col-lg:nth-of-type(4) a, ._giveMePadding .col-lg:last-of-type a {
+  display: none; }
 
 .producttext {
   font-size: 26px;
@@ -889,8 +894,7 @@ main {
     opacity: 0.5; }
   .banner h1 {
     text-align: center;
-    font-weight: bold;
-    font-size: 28px; }
+    font-weight: bold; }
   .banner ._bannerTile p {
     max-width: 40%;
     margin: auto; }
@@ -898,6 +902,8 @@ main {
     margin: 3px auto;
     font-size: 15px;
     line-height: 1.2; }
+    .banner ._bannerTexts b {
+      font-weight: bold; }
 
 footer {
   padding: 17px 59px;

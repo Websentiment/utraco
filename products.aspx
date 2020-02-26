@@ -63,7 +63,7 @@
                                             </ul>
                                         </div>
 
-                                    <a href="#" class="read-more JSmore">Toon Meer</a>       
+                                    <a href="#" class="read-more JSmore">Read more<i class="fas fa-chevron-down"></i></a>       
                                 </div>
                             </div>
                             <%--<div class="product col-lg-2 col-6">
