@@ -76,7 +76,7 @@
             position: absolute;
             height: 9px;
             width: 50%;
-            background: blue;
+            background: $blue;
             opacity: 1;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
@@ -209,7 +209,7 @@
 
                         &.active {
                             font-weight: bold;
-                            color: blue;
+                            color: $blue;
                         }
 
                         &:after {

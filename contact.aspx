@@ -98,6 +98,7 @@
                                             <asp:ListItem selected="True" Text="---" Value="1"></asp:ListItem>
                                             <asp:ListItem Text="Terugbelverzoek" Value="2"></asp:ListItem>
                                         </asp:DropDownList>
+                                        <span><i class="fas fa-chevron-down"></i></span>
                                     </div>
                                 </div>
                                 <div class="col-sm-5 offset-sm-2">
@@ -116,7 +117,7 @@
                                     <div class="row">
                                 <div class="col-lg-8">
                                     <div class="form-box ">
-                                        <div class="checkbox">
+                                        <div style="display: none;" class="checkbox">
                                             <asp:CheckBox runat="server" ID="cbPrivacy" value="check" />
                                             <label for="cbPrivacy">Ja, ik ga akkoord met de <a href="/privacyverklaring" target="_blank">Privacyverklaring.</a></label>
                                         </div>

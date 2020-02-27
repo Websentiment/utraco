@@ -8,7 +8,7 @@
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
      <section class="banner">
-        <img class="productimg" src="resources//img/Utraco-Certificates.jpg" alt="Alternate Text" />
+        <img class="productimg bright" src="resources//img/Utraco-Certificates.jpg" alt="Alternate Text" />
 <%--         <picture>
                 <source id="ltlSrcMobiel" runat="server" srcset="" media="(max-width: 415px)">
                 <source id="ltlSrcTablet" runat="server" srcset="" media="(max-width: 768px)">

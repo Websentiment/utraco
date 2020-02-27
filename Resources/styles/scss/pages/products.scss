@@ -104,7 +104,7 @@
     padding-bottom: 170px;
 
     ul {
-        max-height: 130px;
+        max-height: 162px;
         overflow: hidden;
         position: relative;
         display: block;
@@ -121,10 +121,9 @@
     ._giveMePadding {
         padding: 0px 0px !important;
         }
-    .item{
-        
-        
-    }
+        .item {
+            margin-bottom: 30px;
+        }
     }
 @media only screen and (max-width:768px){
     ._ProItemsContainer .read-more {

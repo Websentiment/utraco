@@ -202,12 +202,17 @@ footer {
 @media only screen and (max-width: 731.5px) {
   .giveImageSize {
     max-width: 80%;
-    margin: 0 8% !important; }
+    margin: 25px 8% 0 !important; }
   .img-wrapper img {
     max-width: 170px;
     height: auto;
-    display: inline-block;
-    margin: 10px 29px !important; } }
+    display: inline-block; }
+  ._giveMePadding .innerText {
+    margin-bottom: 25px; }
+  .usp .item {
+    margin-bottom: 10px; }
+  main {
+    margin-top: 80px !important; } }
 
 .checkbox, .radio {
   margin-top: 0px; }
@@ -328,7 +333,7 @@ header {
       position: absolute;
       height: 9px;
       width: 50%;
-      background: blue;
+      background: #003576;
       opacity: 1;
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
@@ -406,7 +411,7 @@ header {
           color: black; }
           header .nav-items ul li a.active {
             font-weight: bold;
-            color: blue; }
+            color: #003576; }
           header .nav-items ul li a:after {
             display: none; } }
 
@@ -442,18 +447,36 @@ header {
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); }
+  .contactpage .form-group span {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 35px;
+    height: 100%;
+    background: #003576;
+    text-align: center;
+    border-radius: 2px; }
+    .contactpage .form-group span i {
+      position: relative;
+      font-size: 12px;
+      color: #fff;
+      vertical-align: -webkit-baseline-middle; }
 
 .contactpage label {
   font-weight: bold;
   margin: 0px auto 25px; }
 
 .contactpage .col-lg-4 input {
-  background-color: #000099;
+  background: linear-gradient(to right, #003576 0%, #324A9A 100%);
   color: #f7f7f7;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 2px;
+  border: none;
   width: 45%;
-  height: 175%; }
+  padding: 15px 0px;
+  text-transform: uppercase;
+  cursor: pointer; }
 
 .contactpage .checkbox {
   margin: 0px auto 10px; }
@@ -470,6 +493,10 @@ header {
 
 .contactcolor {
   color: white; }
+
+@media only screen and (max-width: 768px) {
+  .giveImageSize {
+    display: none; } }
 
 .info {
   min-height: 55vh;
@@ -492,7 +519,9 @@ header {
 
 @media only screen and (max-width: 768px) {
   .info ._infoDescription {
-    width: 100%; } }
+    width: 100%; }
+  .info .mb-4 {
+    margin: 0px !important; } }
 
 .banner {
   z-index: -1; }
@@ -574,10 +603,11 @@ header {
   .tweedechild .col-12 {
     text-align: center;
     font-size: 10px; }
+  .tweedechild ._boxTitle {
+    padding-left: 15px; }
   .tweedechild p {
-    font-weight: bold;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     padding: 15px; } }
 
 @media only screen and (max-width: 767.5px) {
@@ -602,7 +632,11 @@ header {
 
 @media only screen and (max-width: 768px) {
   .options img {
-    max-width: 50% !important; } }
+    max-width: 50% !important; }
+  .tweedechild ._boxTexts ul {
+    columns: 1; }
+  .options ._optionsDes img {
+    margin-bottom: 20px; } }
 
 .banner ._bannerTexts.white {
   margin-top: 20px;
@@ -677,7 +711,7 @@ header {
 .products {
   padding-bottom: 170px; }
   .products ul {
-    max-height: 130px;
+    max-height: 162px;
     overflow: hidden;
     position: relative;
     display: block;
@@ -687,13 +721,18 @@ header {
 
 @media only screen and (max-width: 768px) {
   ._giveMePadding {
-    padding: 0px 0px !important; } }
+    padding: 0px 0px !important; }
+  .item {
+    margin-bottom: 30px; } }
 
 @media only screen and (max-width: 768px) {
   ._ProItemsContainer .read-more {
     display: block;
     font-weight: bold;
     margin: 12px; } }
+
+.usp h3 {
+  font-size: 33px; }
 
 .usp .ceritifcatesimage {
   max-width: 45%;
@@ -705,6 +744,13 @@ header {
 
 .gviemewidth {
   min-height: 60vh; }
+
+.banner .bright {
+  opacity: unset;
+  height: 100%; }
+
+.banner .producth1 {
+  font-size: 33px; }
 
 @media only screen and (max-width: 768px) {
   .ceritifcatesimageul img {
