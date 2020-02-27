@@ -28,6 +28,12 @@
 }
 
 @media only screen and (max-width:768px) {
+    .usp {
+        .ceritifcatesimageul {
+            margin: 0 1%;
+        }
+    }
+
     .ceritifcatesimageul img{
         max-width: 90% !important;
         margin: 20px auto;

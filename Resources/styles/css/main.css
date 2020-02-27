@@ -25,7 +25,7 @@
     font-size: 25px; }
 
 .widget-messenger {
-  display: inline-block;
+  display: none;
   position: fixed;
   right: 40px;
   bottom: 30px;
@@ -417,7 +417,7 @@ header {
 
 @media only screen and (max-width: 375.5px) {
   header img {
-    max-width: 270px !important;
+    max-width: 225px !important;
     margin-top: 20px; } }
 
 @media only screen and (max-width: 768px) {
@@ -496,7 +496,9 @@ header {
 
 @media only screen and (max-width: 768px) {
   .giveImageSize {
-    display: none; } }
+    display: none; }
+  .information .col-sm-6 .innerText {
+    margin-bottom: 25px; } }
 
 .info {
   min-height: 55vh;
@@ -729,7 +731,9 @@ header {
   ._ProItemsContainer .read-more {
     display: block;
     font-weight: bold;
-    margin: 12px; } }
+    margin: 12px; }
+  ._ProItemsContainer ._title {
+    font-size: 15px; } }
 
 .usp h3 {
   font-size: 33px; }
@@ -753,6 +757,8 @@ header {
   font-size: 33px; }
 
 @media only screen and (max-width: 768px) {
+  .usp .ceritifcatesimageul {
+    margin: 0 1%; }
   .ceritifcatesimageul img {
     max-width: 90% !important;
     margin: 20px auto; } }
