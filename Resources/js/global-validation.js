@@ -114,14 +114,14 @@
                 trigger: 'blur',
                 validators: {
                     notEmpty: {
-                        message: "E-mailadres is niet ingevuld."
+                        message: "E-mail is empty."
                     },
                     emailAddress: {
                         message: " " //Dit doen anders weergeeft die automatische melding op de html5 attribute type="email"
                     },
                     regexp: {
                         regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
-                        message: "E-mailadres is niet geldig."
+                        message: "E-mail is not valid."
                     }
                 }
             },
@@ -418,7 +418,7 @@
                 trigger: 'blur',
                 validators: {
                     notEmpty: {
-                        message: 'Naam is niet ingevuld.'
+                        message: 'Name is empty.'
                     },
                     regexp: {
                         regexp: /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/,
@@ -482,14 +482,14 @@
                 trigger: 'blur',
                 validators: {
                     notEmpty: {
-                        message: "E-mailadres is niet ingevuld."
+                        message: "E-mail is empty"
                     },
                     emailAddress: {
-                        message: " " //Dit doen anders weergeeft die automatische melding op de html5 attribute type="email"
+                        message: "" //Dit doen anders weergeeft die automatische melding op de html5 attribute type="email"
                     },
                     regexp: {
                         regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
-                        message: "Dit is geen geldig e-mailadres."
+                        message: "E-mail is not valid"
                     }
                 }
             },
@@ -558,7 +558,7 @@
                 trigger: 'blur',
                 validators: {
                     notEmpty: {
-                        message: 'Bericht is niet ingevuld.'
+                        message: 'Message is empty.'
                     }
                 }
             },

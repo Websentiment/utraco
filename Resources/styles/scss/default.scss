@@ -1,7 +1,7 @@
 ﻿.usp {
     text-align: center;
 
-    
+
 
     .customCol {
         width: 100%;
@@ -22,8 +22,8 @@
         }
 
         b {
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: 900;
             color: $blue;
         }
     }
@@ -192,7 +192,6 @@
     .giveImageSize {
         max-width: 80%;
         margin: 0px 19%;
-        
     }
 
     .container-fluid {
@@ -219,9 +218,12 @@
     }
 
     .innerText {
+        font-weight: 500;
+        line-height: 1.8;
+
         b {
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 900;
         }
 
         p {
@@ -229,10 +231,10 @@
 
             b {
                 font-size: 16px;
-                font-weight: 600;
+                font-weight: 900;
 
-                &:first-of-type{
-                    font-size:20px;
+                &:first-of-type {
+                    font-size: 20px;
                 }
             }
 

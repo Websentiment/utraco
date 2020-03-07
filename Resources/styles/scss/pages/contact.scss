@@ -44,7 +44,7 @@
         margin: 0px auto 25px;
     }
 
-    .col-lg-4 {
+    .btn-submit {
         input {
             background: linear-gradient(to right,#003576 0%,#324A9A 100%);
             color: #f7f7f7;
@@ -53,8 +53,8 @@
             border: none;
             width: 45%;
             padding: 15px 0px;
-            text-transform: uppercase;
             cursor: pointer;
+            font-weight: 700;
         }
     }
 

@@ -80,13 +80,13 @@
                         <div class="contact-inner">
                             <div class="row">
                                 <div class="col-sm-5">
-                                    <label>Your Name(required)</label>
+                                    <label>Your Name (required)</label>
                                     <div class="form-group">
                                         <asp:TextBox runat="server" ID="txtName" placeholder="Your Name" CssClass="form-control" />
                                     </div>
                                 </div>
                                 <div class="col-sm-5 offset-sm-2">
-                                    <label>Your Email </label>
+                                    <label>Your Email (required)</label>
                                     <div class="form-group">
                                         <asp:TextBox  runat="server" ID="txtEmail" placeholder="Your Email" CssClass="form-control" TextMode="Email" />
                                     </div>
@@ -128,7 +128,9 @@
                                 </div>
                                 
                                 <div class="col-lg-4">
-                                    <asp:Button runat="server" ID="btnSubmit1" Text="Send" CssClass="btn-default btn-orange" UseSubmitBehavior="false" OnClientClick="return isContactValid2()" />
+                                    <div class="btn-submit">
+                                        <asp:Button runat="server" ID="btnSubmit1" Text="Send" CssClass="btn-default btn-orange" UseSubmitBehavior="false" OnClientClick="return isContactValid2()" />
+                                    </div>
                                  </div>
                                 <br />
                             </div>

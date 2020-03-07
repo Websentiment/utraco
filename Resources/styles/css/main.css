@@ -15,8 +15,8 @@
       display: block;
       margin: 10px auto; }
     .usp .item b {
-      font-size: 15px;
-      font-weight: 600;
+      font-size: 16px;
+      font-weight: 900;
       color: #003576; }
   .usp h3 {
     text-align: center;
@@ -151,18 +151,21 @@
       font-weight: 600; }
       .information ._titleContactInfo a:hover {
         text-decoration: underline !important; }
-  .information .innerText b {
-    font-size: 16px;
-    font-weight: 600; }
-  .information .innerText p {
-    font-size: 16px; }
-    .information .innerText p b {
+  .information .innerText {
+    font-weight: 500;
+    line-height: 1.8; }
+    .information .innerText b {
       font-size: 16px;
-      font-weight: 600; }
-      .information .innerText p b:first-of-type {
-        font-size: 20px; }
-    .information .innerText p a:hover {
-      color: #003576; }
+      font-weight: 900; }
+    .information .innerText p {
+      font-size: 16px; }
+      .information .innerText p b {
+        font-size: 16px;
+        font-weight: 900; }
+        .information .innerText p b:first-of-type {
+          font-size: 20px; }
+      .information .innerText p a:hover {
+        color: #003576; }
   .information .txtsmall {
     font-size: 16px;
     font-weight: bold; }
@@ -384,7 +387,7 @@ header {
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg); }
 
-@media only screen and (max-width: 767.5px) {
+@media only screen and (max-width: 768px) {
   .hamburger {
     display: block; }
   header.open .nav-items {
@@ -467,7 +470,7 @@ header {
   font-weight: bold;
   margin: 0px auto 25px; }
 
-.contactpage .col-lg-4 input {
+.contactpage .btn-submit input {
   background: linear-gradient(to right, #003576 0%, #324A9A 100%);
   color: #f7f7f7;
   font-size: 15px;
@@ -475,8 +478,8 @@ header {
   border: none;
   width: 45%;
   padding: 15px 0px;
-  text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: 700; }
 
 .contactpage .checkbox {
   margin: 0px auto 10px; }
@@ -961,16 +964,20 @@ footer {
   padding: 17px 59px;
   font-size: 12px;
   border-top: 1px solid #f2f2f2; }
+  footer .copy-txt {
+    font-weight: 500; }
   footer .footermenu {
     text-align: center; }
     footer .footermenu li {
-      display: inline-block; }
+      display: inline-block;
+      font-weight: 500; }
       footer .footermenu li a {
         margin: 0px 8px; }
   footer .footerright {
     text-align: right; }
     footer .footerright li {
-      display: inline-block; }
+      display: inline-block;
+      font-weight: 500; }
       footer .footerright li a {
         margin: 0px 8px; }
 
