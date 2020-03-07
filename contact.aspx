@@ -36,12 +36,12 @@
                             <p><asp:Literal ID="ltlContactTitleSub" runat="server" /></p>
                         </div>
                         <div class="row">
-                            <div class="col-sm-5">
+                            <div class="col-lg-5 col-md-12">
                                 <div class="innerText _Left">
                                     <p><asp:Literal ID="ltlContactTextLeft1" runat="server" /></p>
                                 </div>
                             </div>
-                            <div class="col-sm-7">
+                            <div class="col-lg-7 col-md-12">
                                 <div class="innerText _Right">
                                     <p><asp:Literal ID="ltlContactTextRight1" runat="server" /></p>
                                 </div>
