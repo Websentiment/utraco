@@ -188,6 +188,10 @@
 footer {
   font-weight: bold; }
 
+@media only screen and (max-width: 991.5px) {
+  .usp .col-6:last-of-type {
+    margin: auto; } }
+
 @media only screen and (max-width: 767.5px) {
   .tweedechild .col-12 {
     text-align: center;
@@ -723,6 +727,10 @@ header {
     transition: 0.3s all ease-in-out; }
     .products ul.open {
       max-height: 999px; }
+
+@media only screen and (max-width: 991.5px) {
+  .products .col-6:last-of-type {
+    margin: auto; } }
 
 @media only screen and (max-width: 768px) {
   ._giveMePadding {

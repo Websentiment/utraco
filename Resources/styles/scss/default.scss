@@ -281,7 +281,15 @@ footer{
     font-weight:bold;
 }
 
-
+@media only screen and (max-width: 991.5px) {
+    .usp{
+        .col-6 {
+            &:last-of-type {
+                margin: auto;
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 767.5px) {
     .tweedechild {
