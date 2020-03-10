@@ -577,7 +577,8 @@ header {
       font-size: 23px !important; }
   .tweedechild ._boxTexts ul {
     columns: 2;
-    width: 100%; }
+    width: 100%;
+    font-size: 17px; }
     .tweedechild ._boxTexts ul li {
       position: relative;
       padding-left: 15px;
@@ -589,12 +590,12 @@ header {
         position: absolute;
         top: 10px;
         left: 0;
-        width: 7px;
+        width: 5px;
         content: "";
         background: #E4022E;
         margin-right: 10px;
         display: inline-block;
-        height: 7px;
+        height: 5px;
         border-radius: 50%; }
       .tweedechild ._boxTexts ul li:nth-child(-n+6) {
         width: 85%; }

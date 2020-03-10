@@ -69,6 +69,7 @@
         ul {
             columns: 2;
             width: 100%;
+            font-size: 17px;
 
             li {
                 position: relative;
@@ -78,12 +79,12 @@
                     position: absolute;
                     top: 10px;
                     left: 0;
-                    width: 7px;
+                    width: 5px;
                     content: "";
                     background: $red;
                     margin-right: 10px;
                     display: inline-block;
-                    height: 7px;
+                    height: 5px;
                     border-radius: 50%;
                 }
 
