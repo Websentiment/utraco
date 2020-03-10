@@ -339,3 +339,13 @@ footer{
         margin-top: 80px !important;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    .img-wrapper{
+        img{
+            &:first-of-type{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
