@@ -79,19 +79,19 @@
                     <div class="col-lg-8">
                         <div class="contact-inner">
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-lg-5 col-sm-6">
                                     <label>Your Name (required)</label>
                                     <div class="form-group">
                                         <asp:TextBox runat="server" ID="txtName" placeholder="Your Name" CssClass="form-control" />
                                     </div>
                                 </div>
-                                <div class="col-sm-5 offset-sm-2">
+                                <div class="col-lg-5 offset-lg-2 col-sm-6">
                                     <label>Your Email (required)</label>
                                     <div class="form-group">
                                         <asp:TextBox  runat="server" ID="txtEmail" placeholder="Your Email" CssClass="form-control" TextMode="Email" />
                                     </div>
                                 </div>
-                                <div class="col-sm-5">
+                                <div class="col-lg-5 col-sm-6">
                                     <label>How can we help you?</label>
                                     <div class="form-group">
                                         <asp:DropDownList ID="ddlSoort" runat="server" CssClass="form-control">
@@ -101,7 +101,7 @@
                                         <span><i class="fas fa-chevron-down"></i></span>
                                     </div>
                                 </div>
-                                <div class="col-sm-5 offset-sm-2">
+                                <div class="col-lg-5 offset-lg-2 col-sm-6">
                                     <label>Subject</label>
                                     <div class="form-group">
                                         <asp:TextBox runat="server" ID="txtPhone" placeholder="Subject" CssClass="form-control" TextMode="Phone"/>
