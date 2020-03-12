@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <img src="/resources/img/utraco-kaart-arkema.png" class="giveImageSize" alt="Alternate Text" />
+                        <img src="/resources/img/utraco-wereldkaart.svg" class="giveImageSize" alt="Alternate Text" />
                     </div>
                 </div>
 
