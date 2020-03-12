@@ -7,9 +7,9 @@
     <section class="banner normal no-image">
         <div class="picture">
             <picture>
-                <source id="ltlSrcMobiel" srcset="https://via.placeholder.com/420x1080" media="(max-width: 415px)">
-                <source id="ltlSrcTablet" srcset="https://via.placeholder.com/768x1080" media="(max-width: 768px)">
-                <img src="#" alt="">
+                <source id="ltlSrcMobiel" runat="server" srcset="" media="(max-width: 415px)">
+                <source id="ltlSrcTablet" runat="server" srcset="" media="(max-width: 768px)">
+                <asp:literal ID="ltlImgbanner" runat="server" />
             </picture>
         </div>
         <div class="container">

@@ -11,7 +11,7 @@ Partial Class _Default
             sLanguage = sDefaultLanguage.ToUpper
         End If
 
-        'iTaalID = sTaalID(sLanguage)
+        iTaalID = sTaalID(sLanguage)
 
         If Page.IsPostBack = False Then
             sQs = RouteData.Values("page").ToString()
@@ -23,18 +23,19 @@ Partial Class _Default
             Dim PI As New clsPageItems
             PI.sPI(Page, sLanguage, sQs, False, False, True, sParentPage)
 
-            'Dim sType As String = Request.QueryString("from")
-            'Select Case sType
-            '    Case "contact"
-            '        ltlBContact.Visible = True
-            '    Case "booking"
-            '        ltlBBooking.Visible = True
-            '    Case "apply"
-            '        ltlBApply.Visible = True
-            '    Case "apply-escort"
-            '        ltlBApplyEscort.Visible = True
-            '    Case Else
-            'End Select
+            Dim IMG As New clsImages
+            IMG.dt = IMG.sImageByPageAndTussTypeAndsSoort(sQs, "_pages", iTaalID, "ltlSrcMobiel")
+            If IMG.dt.Rows.Count > 0 Then
+                IMG.dr = IMG.dt.Rows(0)
+                ltlSrcMobiel.Attributes.Add("srcset", IMG.dr.Item("sSmall").Replace("~/", sURL()))
+            End If
+
+            IMG.dt = IMG.sImageByPageAndTussTypeAndsSoort(sQs, "_pages", iTaalID, "ltlSrcTablet")
+            If IMG.dt.Rows.Count > 0 Then
+                IMG.dr = IMG.dt.Rows(0)
+                ltlSrcTablet.Attributes.Add("srcset", IMG.dr.Item("sSmall").Replace("~/", sURL()))
+            End If
+
         End If
     End Sub
 End Class
