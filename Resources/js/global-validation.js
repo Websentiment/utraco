@@ -418,11 +418,11 @@
                 trigger: 'blur',
                 validators: {
                     notEmpty: {
-                        message: 'Name is empty.'
+                        message: 'Please fill your name in.'
                     },
                     regexp: {
                         regexp: /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/,
-                        message: 'Naam kan alleen bestaan uit letters.'
+                        message: 'Your name can only exsit out of letters.'
                     }
                 }
             },
@@ -482,7 +482,7 @@
                 trigger: 'blur',
                 validators: {
                     notEmpty: {
-                        message: "E-mail is empty"
+                        message: "Please fill your E-mail in"
                     },
                     emailAddress: {
                         message: "" //Dit doen anders weergeeft die automatische melding op de html5 attribute type="email"
@@ -497,9 +497,9 @@
                 trigger: 'blur',
                 validators: {
                     notEmpty: {
-                        message: 'Telefoonnummer is niet ingevuld.'
+                        message: 'Please fill a subject'
                     },
-                    regexp: {
+                    /*regexp: {
                         regexp: /^[0-9]*$/,
                         message: "Een mobiele telefoonnummer mag alleen bestaan uit cijfers."
                     },
@@ -507,7 +507,7 @@
                         min: 10,
                         max: 12,
                         message: 'Telefoonummer moet tussen 10 & 12 cijfers zijn.'
-                    }
+                    }*/
                 }
             },
             ctl00$ContentPlaceHolder1$txtMobile: {
@@ -558,7 +558,7 @@
                 trigger: 'blur',
                 validators: {
                     notEmpty: {
-                        message: 'Message is empty.'
+                        message: 'Please fill a Message in.'
                     }
                 }
             },

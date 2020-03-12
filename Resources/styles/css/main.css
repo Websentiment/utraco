@@ -779,6 +779,9 @@ header {
     max-width: 90% !important;
     margin: 20px auto; } }
 
+.textpage div {
+  padding-bottom: 45px; }
+
 /*------------------------------------*    #Reset and default
 \*------------------------------------*/
 html,
