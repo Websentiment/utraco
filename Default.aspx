@@ -94,8 +94,12 @@
                  <div class="col-sm-12">                     
                     <h2 class="giveMeSize">Official distributor/agent for</h2>
                      <div class="img-wrapper">
-                         <img src="/resources/img/ci2.png" alt="Alternate Text" />
-                        <img src="/resources/img/Logo Arkema.jpg" alt="Alternate Text" />
+                         <a href="https://www.total.com/en">
+                            <img src="/resources/img/ci2.png" alt="Alternate Text" />
+                         </a>
+                         <a href="https://www.arkema.com/en/">
+                            <img src="/resources/img/Logo Arkema.jpg" alt="Alternate Text" />
+                         </a>
                      </div>
                 </div>               
             </div>
