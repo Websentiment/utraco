@@ -27,6 +27,14 @@
         }
     }
 }
+@media only screen and (min-width: 2200px){
+    .info {
+        min-height: 43vh;
+        .inner-wrap{
+            margin-top: 160px;
+        }
+    }
+}
 @media only screen and (max-width: 768px){
     .info {
         min-height: 44vh;

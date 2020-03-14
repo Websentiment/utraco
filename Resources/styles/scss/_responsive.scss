@@ -1,4 +1,9 @@
-﻿@media only screen and (max-width: 1024px) {
+﻿@media only screen and (min-width: 2200px){
+    main {
+        margin-top: 150px;
+    }
+}
+@media only screen and (max-width: 1024px) {
     main{
         margin-top: 75px;
     }

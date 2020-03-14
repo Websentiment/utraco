@@ -572,6 +572,12 @@ header {
       text-align: center;
       padding: 30px !important; }
 
+@media only screen and (min-width: 2200px) {
+  .info {
+    min-height: 43vh; }
+    .info .inner-wrap {
+      margin-top: 160px; } }
+
 @media only screen and (max-width: 768px) {
   .info {
     min-height: 44vh; }
@@ -1038,6 +1044,10 @@ main {
     line-height: 1.2; }
     .banner ._bannerTexts b {
       font-weight: bold; }
+
+@media only screen and (min-width: 2200px) {
+  main {
+    margin-top: 150px; } }
 
 @media only screen and (max-width: 1024px) {
   main {
