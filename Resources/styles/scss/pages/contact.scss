@@ -44,6 +44,10 @@
         margin: 0px auto 25px;
     }
 
+    textarea {
+        resize: none;
+    }
+
     .btn-submit {
         input {
             background: linear-gradient(to right,#003576 0%,#324A9A 100%);
@@ -107,6 +111,13 @@
             .innerText{
                 margin-bottom: 25px;
             }
+        }
+    }
+}
+@media only screen and (max-width: 420px){
+    .contactpage {
+        .container-fluid {
+            padding: 0px 20px;
         }
     }
 }

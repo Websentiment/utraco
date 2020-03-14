@@ -227,7 +227,21 @@
             }
         }
     }
-
+}
+@media only screen and (max-width: 420px){
+    header {
+        .logo {
+            img {
+                max-width: 100%;
+                width: 65%;
+                margin-bottom: 1%;
+                margin-top: 1%;
+            }
+        }
+    }
+    .hamburger{
+        top: -3%;
+    }
 }
 @media only screen and (max-width:375.5px){
     header{

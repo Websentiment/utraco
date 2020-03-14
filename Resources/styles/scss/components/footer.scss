@@ -47,6 +47,20 @@
         padding: 0px;
     }
 }
+@media only screen and (max-width: 420px){
+    footer {
+        padding: 20px 0 20px;
+
+        .footermenu {
+            text-align: left;
+        }
+
+        .footerright{
+            text-align: left;
+            padding: 10px 15px;
+        }
+    }
+}
 @media only screen and (max-width: 375px){
     footer {
         p {

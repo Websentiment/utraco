@@ -270,13 +270,13 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-3"> 
+                <div class="col-sm-3 order-3 order-md-1"> 
                    <p class="copy-txt"><asp:Literal ID="ltlCopyright" runat="server" /></p>
                 </div>
-                <div class="col-sm-6 footermenu">
+                <div class="col-sm-6 order-1 order-md-2 footermenu">
                     <asp:Literal ID="ltlFooterMenu" runat="server" />
                 </div>
-                <div class="col-sm-3 footerright">
+                <div class="col-sm-3 order-2 order-md-3 footerright">
                     <asp:Literal ID="ltlFooterMenuRight" runat="server" />
                 </div>
             </div>

@@ -438,6 +438,15 @@ header {
           header .nav-items ul li a:after {
             display: none; } }
 
+@media only screen and (max-width: 420px) {
+  header .logo img {
+    max-width: 100%;
+    width: 65%;
+    margin-bottom: 1%;
+    margin-top: 1%; }
+  .hamburger {
+    top: -3%; } }
+
 @media only screen and (max-width: 375.5px) {
   header img {
     max-width: 225px !important;
@@ -491,6 +500,9 @@ header {
   font-weight: bold;
   margin: 0px auto 25px; }
 
+.contactpage textarea {
+  resize: none; }
+
 .contactpage .btn-submit input {
   background: linear-gradient(to right, #003576 0%, #324A9A 100%);
   color: #f7f7f7;
@@ -531,6 +543,10 @@ header {
     display: none; }
   .information .col-sm-6 .innerText {
     margin-bottom: 25px; } }
+
+@media only screen and (max-width: 420px) {
+  .contactpage .container-fluid {
+    padding: 0px 20px; } }
 
 .info {
   min-height: 55vh;
@@ -1001,6 +1017,10 @@ main {
     .banner ._bannerTexts b {
       font-weight: bold; }
 
+@media only screen and (max-width: 420px) {
+  main {
+    margin-top: 55px !important; } }
+
 footer {
   padding: 17px 59px;
   font-size: 12px;
@@ -1030,6 +1050,15 @@ footer {
   footer {
     font-size: 14px;
     padding: 0px; } }
+
+@media only screen and (max-width: 420px) {
+  footer {
+    padding: 20px 0 20px; }
+    footer .footermenu {
+      text-align: left; }
+    footer .footerright {
+      text-align: left;
+      padding: 10px 15px; } }
 
 @media only screen and (max-width: 375px) {
   footer p {
