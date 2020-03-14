@@ -4,7 +4,7 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <section class="banner normal no-image">
+    <section class="banner text-page-banner normal no-image">
         <div class="picture">
             <picture>
                 <source id="ltlSrcMobiel" runat="server" srcset="" media="(max-width: 415px)">

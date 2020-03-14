@@ -1,0 +1,22 @@
+﻿.banner {
+    &.text-page-banner {
+        min-height: 300px;
+
+        h1 {
+            margin-top: 44px;
+        }
+    }
+}
+
+.textpage {
+    margin-top: 50px;
+
+    h1{
+        margin-bottom: 25px;
+    }
+
+    a {
+        color: $blue;
+        text-decoration: underline !important;
+    }
+}
