@@ -28,7 +28,7 @@
         <div class="container-fluid">
             
                 <div class="row align-items-center ">
-                    <div class="col-sm-6">
+                    <div class="col-md-12 col-lg-6">
                         <div class="_titleInfo">
                             <h2><asp:Literal ID="ltlContactTitle" runat="server" /></h2>
                         </div>
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-md-12 col-lg-6">
                         <img src="/resources/img/utraco-wereldkaart.svg" class="giveImageSize" alt="Alternate Text" />
                     </div>
                 </div>

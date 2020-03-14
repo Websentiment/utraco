@@ -28,15 +28,19 @@
     }
 }
 @media only screen and (max-width: 768px){
-    .info{
-        ._infoDescription{
-            width:100%;
-        }
-    }
+    .info {
+        min-height: 44vh;
 
-    .info{
-        .mb-4{
+        ._infoDescription {
+            width: 100%;
+        }
+
+        .mb-4 {
             margin: 0px !important;
+        }
+
+        .inner-wrap {
+            margin-top: 150px;
         }
     }
 }

@@ -81,6 +81,22 @@
     color:white;
 }
 
+@media only screen and (max-width: 1024px){
+    .information {
+        &.informationcontact {
+            .container-fluid {
+                padding: 0 30px;
+            }
+
+            .giveImageSize {
+                max-width: 100%;
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:768px) {
     .giveImageSize{
         display: none;
