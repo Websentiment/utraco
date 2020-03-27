@@ -5,17 +5,17 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <section class="banner text-page-banner normal no-image">
-        <div class="picture">
-            <picture>
+        <picture>
                 <source id="ltlSrcMobiel" runat="server" srcset="" media="(max-width: 415px)">
                 <source id="ltlSrcTablet" runat="server" srcset="" media="(max-width: 768px)">
                 <asp:literal ID="ltlImgbanner" runat="server" />
             </picture>
-        </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <h1><asp:Literal ID="ltlTitle" runat="server" /></h1>
+                <div class="col-12">
+                    <div class="_bannerTile">
+                        <h1><asp:Literal ID="ltlTitle" runat="server" /></h1>
+                    </div>
                 </div>
             </div>
         </div>
