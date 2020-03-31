@@ -1,5 +1,14 @@
 ﻿.textpage{
     div{
         padding-bottom: 45px;
+
+        b{
+            font-weight: bold;
+        }
+
+        a{
+            color: $primary-color;
+            font-weight: 500;
+        }
     }
 }

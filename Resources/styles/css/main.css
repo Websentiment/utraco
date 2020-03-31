@@ -837,6 +837,11 @@ header {
 
 .textpage div {
   padding-bottom: 45px; }
+  .textpage div b {
+    font-weight: bold; }
+  .textpage div a {
+    color: #003576;
+    font-weight: 500; }
 
 .banner.text-page-banner {
   min-height: 300px; }
