@@ -117,9 +117,9 @@
                                     <div class="row">
                                 <div class="col-lg-8">
                                     <div class="form-box ">
-                                        <div style="display: none;" class="checkbox">
+                                        <div class="form-group checkbox">
                                             <asp:CheckBox runat="server" ID="cbPrivacy" value="check" />
-                                            <label for="cbPrivacy">Ja, ik ga akkoord met de <a href="/privacyverklaring" target="_blank">Privacyverklaring.</a></label>
+                                            <label for="cbPrivacy">Yes, I agree with the <a href="/privacy-policy" target="_blank">Privacy policy.</a></label>
                                         </div>
                                     </div>
                                 </div>

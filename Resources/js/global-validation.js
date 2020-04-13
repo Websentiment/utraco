@@ -3,11 +3,6 @@
     var BETWEEN = /^[1-8]$/;
     $('.divGlobalForm').formValidation({
         framework: 'bootstrap',
-        icon: {
-            valid: 'fas fa-check',
-            invalid: 'fas fa-times',
-            validating: 'fas fa-sync'
-        },
         fields: {
             ctl00$ContentPlaceHolder1$txtAnswer: {
                 trigger: 'blur',
@@ -646,7 +641,7 @@
                     choice: {
                         min: 1,
                         max: 1,
-                        message: 'U dient akkoord te gaan met de privacyverklaring.'
+                        message: 'You must agree to the privacy policy'
                     }
                 }
             },

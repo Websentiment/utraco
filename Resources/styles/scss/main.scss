@@ -69,6 +69,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
+.form-control-feedback {
+    display: none !important;
+}
+
 main{
     margin-top: 100px;
 }
@@ -289,6 +293,47 @@ main{
         b{
             font-weight: bold;
         }
+    }
+}
+
+.popup {
+    position: fixed;
+    z-index: 12;
+    left: 50px;
+    bottom: 20px;
+    width: calc(100% - 100px);
+    font-size: 16px;
+    color: #fff;
+    background: #003576;
+    border-radius: 2px;
+    padding: 15px 35px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+
+    .btn-default {
+        background: #fff;
+        font-size: 14px;
+        margin-left: auto;
+        display: table;
+        border-radius: 4px;
+        font-weight: 900;
+        color: #013576 !important;
+        border: none;
+        padding: 10px 30px;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    p {
+        font-size: inherit;
+        margin-bottom: 0;
+    }
+
+    .popup .cookies-img {
+        margin-right: 30px;
+        font-size: 25px;
+        float: left;
+        color: #fff;
     }
 }
 

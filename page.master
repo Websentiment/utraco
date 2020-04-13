@@ -219,22 +219,22 @@
         </div>
 
         <div class="overlay"></div>
-       <%-- <div class="popup Cookies" id="PopupCookie" style="display: none;">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <p><asp:Literal ID="ltlCookie" runat="server" /></p>
 
+        <div class="popup Cookies" id="PopupCookie" style="display: none">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-1">
+                        <i class="fas fa-cookie-bite cookies-img"></i>
                     </div>
-                    <div class="col-lg-4">
-                        <a href="/cookies">Instellingen</a>
-                        <a href="#" class="btn-default btn-orange btnAccept">
-                             Ik ga akkoord
-                        </a>
+                    <div class="col-sm-7 col-11">
+                        <p><asp:Literal ID="ltlCookie" runat="server" /></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#" class="btn-default accept btnAccept btn-white">Accept</a>
                     </div>
                 </div>
             </div>
-        </div>--%>
+        </div>
 
         <div class="loading" style="display: none">
             <div class="loader">

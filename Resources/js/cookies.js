@@ -58,6 +58,7 @@
 
     // Script voor cookie melding pop-up
     $('.btnAccept').click(function () {
+        event.preventDefault();
         $.cookie('PopUp', '1', { expires: 365 });
         location.reload(true);
     });
