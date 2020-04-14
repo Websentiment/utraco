@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="textbox">
-                <b>Utraco</b>
+                <b>Utraco Holland B.V.</b>
                 <br />
                 Hallo, Heeft u een probleem?
                 <br />

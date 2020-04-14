@@ -49,7 +49,7 @@
                         <ItemTemplate>
                             <div class="col-lg col-6">
                                 <div class="item">
-                                    <img src='<%# Eval("sColor") %>' alt='<%# "Utraco Holland " & Eval("sTitle") %>' />
+                                    <img src='<%# Eval("sColor") %>' alt='<%# "Utraco Holland B.V. " & Eval("sTitle") %>' />
                                      <div class="inner">
                                          <div class="_title">
                                             <b><%# Eval("sTitle") %></b>
@@ -68,7 +68,7 @@
                             </div>
                             <%--<div class="product col-lg-2 col-6">
                                  <div class="item">
-                                    <img src='<%# Eval("sColor") %>' alt='<%# "Utraco Holland " & Eval("sTitle") %>' />
+                                    <img src='<%# Eval("sColor") %>' alt='<%# "Utraco Holland B.V. " & Eval("sTitle") %>' />
                                      <div class="inner">
                                                 <b><%# Eval("sTitle") %></b>
                                                 <ul>

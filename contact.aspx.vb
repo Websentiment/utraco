@@ -68,7 +68,7 @@ Partial Class _Contact
             Dim sBCC As String = LI.dr.Item("sItem5").replace("[email]", email)
             Dim sOnderwerp As String = LI.dr.Item("sSubTitle").replace("[email]", email)
             Dim sBijlagen As String = ""
-            Dim sInfo As String = txtName.Text
+            Dim sInfo As String = "Utraco Holland B.V."
 
             Dim M As New clsMail
             Dim sTemplate As String = M.sHtml("~/EmailTemplates/mail.aspx")
@@ -97,7 +97,7 @@ Partial Class _Contact
                 sBijlagen = ""
 
                 Dim U As New clsUtility
-                sInfo = "Utraco Holland"
+                sInfo = "Utraco Holland B.V."
 
                 Dim sTemplate1 As String = M.sHtml("~/EmailTemplates/mail.aspx")
                 sTemplate1 = sTemplate1.Replace("[subject]", sOnderwerp)
