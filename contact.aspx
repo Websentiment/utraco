@@ -80,13 +80,13 @@
                         <div class="contact-inner">
                             <div class="row">
                                 <div class="col-lg-5 col-sm-6">
-                                    <label>Your Name (required)</label>
+                                    <label>Your name (required)</label>
                                     <div class="form-group">
                                         <asp:TextBox runat="server" ID="txtName" placeholder="Your Name" CssClass="form-control" />
                                     </div>
                                 </div>
                                 <div class="col-lg-5 offset-lg-2 col-sm-6">
-                                    <label>Your Email (required)</label>
+                                    <label>Your email (required)</label>
                                     <div class="form-group">
                                         <asp:TextBox  runat="server" ID="txtEmail" placeholder="Your Email" CssClass="form-control" TextMode="Email" />
                                     </div>
@@ -108,7 +108,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                     <label>Your Message</label>
+                                     <label>Your message</label>
                                     <div class="form-group">
                                         <textarea placeholder="Your Message" runat="server" id="txtMessage" class="form-control" />
                                     </div>
@@ -119,7 +119,7 @@
                                     <div class="form-box ">
                                         <div class="form-group checkbox">
                                             <asp:CheckBox runat="server" ID="cbPrivacy" value="check" />
-                                            <label for="cbPrivacy">Yes, I agree with the <a href="/privacy-policy" target="_blank">Privacy policy.</a></label>
+                                            <label for="cbPrivacy">Yes, I agree with the <a href="/privacy-policy" target="_blank">privacy policy.</a></label>
                                         </div>
                                     </div>
                                 </div>

@@ -106,7 +106,7 @@ Partial Class _Contact
                 iMailID = M.iscMail(0, iPartijIDBeheerder, "versturen", sType, "", sVan, sNaar, sCC, sBCC, sOnderwerp, sTemplate1, sBijlagen, "", sInfo, Now)
 
                 Dim P As New clsPage
-                Response.Redirect(P.sPageUrlByGuid(sLanguage, "a7e87160-9d02-49f9-bf33-f73e736d0be1"))
+                Response.Redirect(P.sPageUrlByGuid(sLanguage, "3da66034-a11f-4e5d-ba2b-6f2f69953ed5"))
             Else
 
             End If
