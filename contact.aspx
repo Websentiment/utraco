@@ -96,7 +96,7 @@
                                     <div class="form-group">
                                         <asp:DropDownList ID="ddlSoort" runat="server" CssClass="form-control">
                                             <asp:ListItem selected="True" Text="---" Value="1"></asp:ListItem>
-                                            <asp:ListItem Text="Terugbelverzoek" Value="2"></asp:ListItem>
+                                            <asp:ListItem Text="Callback request" Value="2"></asp:ListItem>
                                         </asp:DropDownList>
                                         <span><i class="fas fa-chevron-down"></i></span>
                                     </div>

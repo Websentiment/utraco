@@ -56,7 +56,7 @@ Partial Class _Contact
             Dim email As String = LI.dr.Item("sItem1")
             sBericht = sBericht.Replace("[name]", txtName.Text)
             sBericht = sBericht.Replace("[email]", txtEmail.Text)
-            sBericht = sBericht.Replace("[phone]", txtPhone.Text)
+            sBericht = sBericht.Replace("[subject]", txtPhone.Text)
             sBericht = sBericht.Replace("[contactway]", ddlSoort.SelectedItem.Text)
             sBericht = sBericht.Replace("[message]", txtMessage.Value.Replace(Environment.NewLine, "<br />"))
 
@@ -84,7 +84,7 @@ Partial Class _Contact
                 email = LI.dr.Item("sItem1")
                 sBericht = sBericht.Replace("[name]", txtName.Text)
                 sBericht = sBericht.Replace("[email]", txtEmail.Text)
-                sBericht = sBericht.Replace("[phone]", txtPhone.Text)
+                sBericht = sBericht.Replace("[subject]", txtPhone.Text)
                 sBericht = sBericht.Replace("[contactway]", ddlSoort.SelectedItem.Text)
                 sBericht = sBericht.Replace("[message]", txtMessage.Value.Replace(Environment.NewLine, "<br />"))
 
