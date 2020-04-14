@@ -201,20 +201,20 @@ Public Class clsPageItems
             google_publisher.Attributes.Add("href", "https://plus.google.com/103237995058186185351")
             Mij.Header.Controls.Add(google_publisher)
 
-            'TWITTER site account
-            twitter_site.Name = "twitter:site"
-            Dim sTwitter As String = P.sTwitter
-            If sTwitter <> "" Then
-                twitter_site.Content = "@" & sTwitter.Replace("@", "")
-            Else
-                twitter_site.Content = "@WebSentiment_"
-            End If
-            Mij.Header.Controls.Add(twitter_site)
+            ''TWITTER site account
+            'twitter_site.Name = "twitter:site"
+            'Dim sTwitter As String = P.sTwitter
+            'If sTwitter <> "" Then
+            '    twitter_site.Content = "@" & sTwitter.Replace("@", "")
+            'Else
+            '    twitter_site.Content = "@WebSentiment_"
+            'End If
+            'Mij.Header.Controls.Add(twitter_site)
 
-            'TWITTER creator account
-            twitter_creator.Name = "twitter:creator"
-            twitter_creator.Content = "@WebSentiment_"
-            Mij.Header.Controls.Add(twitter_creator)
+            ''TWITTER creator account
+            'twitter_creator.Name = "twitter:creator"
+            'twitter_creator.Content = "@WebSentiment_"
+            'Mij.Header.Controls.Add(twitter_creator)
 
             'metatag revisit-after
             Revisit.Name = "revisit-after"
