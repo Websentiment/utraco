@@ -850,9 +850,57 @@ header {
   margin-top: 50px; }
   .textpage h1 {
     margin-bottom: 25px; }
+  .textpage b, .textpage strong {
+    font-weight: bold; }
   .textpage a {
     color: #003576;
     text-decoration: underline !important; }
+
+.bedankt {
+  margin: 20px 0;
+  text-align: center; }
+  .bedankt b {
+    font-size: 40px; }
+  .bedankt p {
+    margin-bottom: 20px; }
+  .bedankt a {
+    background: transparent;
+    border: 2px solid black;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .bedankt a:hover {
+      background: black;
+      color: white; }
+
+.thanks {
+  padding: 75px 0; }
+  .thanks .content {
+    -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.17);
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 25px;
+    color: #939393;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    line-height: 24px; }
+    .thanks .content h1 {
+      padding: 20px 25px;
+      margin: -25px -25px 10px;
+      font-size: 25px;
+      display: block;
+      color: #fff;
+      background: #003576; }
+  .thanks .btn-back {
+    background: linear-gradient(to right, #003576 0%, #324a9a 100%);
+    color: #f7f7f7;
+    font-size: 15px;
+    border-radius: 2px;
+    border: none;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-weight: 700; }
 
 /*------------------------------------*    #Reset and default
 \*------------------------------------*/
@@ -1063,6 +1111,8 @@ main {
   border-radius: 2px;
   padding: 15px 35px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  .popup a {
+    text-decoration: underline !important; }
   .popup .btn-default {
     background: #fff;
     font-size: 14px;

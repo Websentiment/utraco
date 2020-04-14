@@ -14,6 +14,7 @@
 @import 'pages/ceritifcates.scss';
 @import 'pages/policy.scss';
 @import 'pages/text.scss';
+@import 'pages/bedankt.scss';
 
 
 
@@ -308,6 +309,10 @@ main{
     border-radius: 2px;
     padding: 15px 35px;
     box-shadow: 0 0 5px rgba(0,0,0,.1);
+
+    a {
+        text-decoration: underline !important;
+    }
 
     .btn-default {
         background: #fff;
