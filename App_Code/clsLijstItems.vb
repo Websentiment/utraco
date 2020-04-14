@@ -121,9 +121,9 @@ Public Class clsLijstItems
     Public Function sLIByLijstItem(sLijstItem As String, iTaalID As Long, iPartijID As Long, bDetailPage As Boolean) As DataTable
         cmd.Parameters.Clear()
         If bDetailPage Then
-            cmd.CommandText = "SELECT LijstItems.*, tussTaalPages.sQueryString, tussTaalPages2.iTaalID AS iTaalID2, tussTaalPages2.sQueryString AS sQueryString2 FROM LijstItems INNER JOIN tblSettings ON LijstItems.sType = tblSettings.sGroup INNER JOIN tussTaalPages ON tblSettings.sPageGuid = tussTaalPages.sGuid INNER JOIN Pages ON tussTaalPages.iPageID = Pages.iPageID LEFT JOIN tussTaalPages AS tussTaalPages2 ON Pages.iParentID = tussTaalPages2.iPageID AND tussTaalPages.iTaalID = tussTaalPages2.iTaalID WHERE (LijstItems.sType = @sType) AND (LijstItems.iTaalID = @iTaalID) AND (LijstItems.bActief = 1) AND (tblSettings.iPartijID = @iPartijID) AND (tussTaalPages.iTaalID = @iTaalID) AND (sLijstItem = @sLijstItem) ORDER BY LijstItems.iVolgorde"
+            cmd.CommandText = "SELECT LijstItems.*, tussTaalPages.sQueryString, tussTaalPages2.iTaalID AS iTaalID2, tussTaalPages2.sQueryString AS sQueryString2 FROM LijstItems INNER JOIN tblSettings ON LijstItems.sType = tblSettings.sGroup INNER JOIN tussTaalPages ON tblSettings.sPageGuid = tussTaalPages.sGuid INNER JOIN Pages ON tussTaalPages.iPageID = Pages.iPageID LEFT JOIN tussTaalPages AS tussTaalPages2 ON Pages.iParentID = tussTaalPages2.iPageID AND tussTaalPages.iTaalID = tussTaalPages2.iTaalID WHERE (LijstItems.sType = @sType) AND (LijstItems.iTaalID = @iTaalID) AND (LijstItems.bActief = 1) AND (tblSettings.iPartijID = @iPartijID) AND (tussTaalPages.iTaalID = @iTaalID) AND (sLijstItem = @sLijstItem) ORDER BY LijstItems.sTitle"
         Else
-            cmd.CommandText = "SELECT * FROM LijstItems WHERE (sLijstItem = @sLijstItem) AND (iTaalID = @iTaalID) AND (iPartijID = @iPartijID) AND (bActief = 1) ORDER BY iVolgorde"
+            cmd.CommandText = "SELECT * FROM LijstItems WHERE (sLijstItem = @sLijstItem) AND (iTaalID = @iTaalID) AND (iPartijID = @iPartijID) AND (bActief = 1) ORDER BY sTitle"
         End If
         cmd.Parameters.AddWithValue("@sLijstItem", sLijstItem)
         cmd.Parameters.AddWithValue("@iPartijID", iPartijID)
