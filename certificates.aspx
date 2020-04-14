@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ceritifcates.aspx.vb" MasterPageFile="~/page.master" Inherits="_ceritifcates" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="certificates.aspx.vb" MasterPageFile="~/page.master" Inherits="_ceritifcates" %>
 
 <%@ Import Namespace="System.Web.Optimization" %>
 
