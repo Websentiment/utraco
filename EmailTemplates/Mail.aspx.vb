@@ -33,7 +33,7 @@ Partial Class MailTemplates_Mail
         '    Dim sUrl As String = BP.sURL()
         '  Dim P As New clsPage
         ltlInfo.Text = PT.sPartijGegevens
-        imgLogo.Src = sURL & "/Uploads/Editor/logo-mail.png"
+        imgLogo.Src = sURL & "/Resources/img/Utraco-logo-arkema-blauw.png"
         'img1.Src = PT.sLogo.Replace("~/", U.Config("UrlCms"))
         ''  imgLogo2.Src = imgLogo.Src
         'aWebsite.HRef = PT.sWebsite

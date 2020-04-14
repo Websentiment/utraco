@@ -104,7 +104,7 @@
                                 <div class="col-lg-5 offset-lg-2 col-sm-6">
                                     <label>Subject</label>
                                     <div class="form-group">
-                                        <asp:TextBox runat="server" ID="txtPhone" placeholder="Subject" CssClass="form-control" TextMode="Phone"/>
+                                        <asp:TextBox runat="server" ID="txtPhone" placeholder="Subject" CssClass="form-control"/>
                                     </div>
                                 </div>
                                 <div class="col-12">
