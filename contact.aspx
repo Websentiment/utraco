@@ -86,9 +86,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-5 offset-lg-2 col-sm-6">
-                                    <label class="required">Your e-mail address </label>
+                                    <label class="required">Your email address </label>
                                     <div class="form-group">
-                                        <asp:TextBox  runat="server" ID="txtEmail" placeholder="Your e-mail address" CssClass="form-control" TextMode="Email" />
+                                        <asp:TextBox  runat="server" ID="txtEmail" placeholder="Your email address" CssClass="form-control" TextMode="Email" />
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-sm-6">
@@ -102,7 +102,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-5 offset-lg-2 col-sm-6">
-                                    <label>Subject</label>
+                                    <label class="required">Subject</label>
                                     <div class="form-group">
                                         <asp:TextBox runat="server" ID="txtPhone" placeholder="Subject" CssClass="form-control" TextMode="Phone"/>
                                     </div>
@@ -131,6 +131,10 @@
                                 </div>
                                 
                                 <div class="col-lg-4">
+                                    <div class="captcha form-group">
+                                        <div class="g-recaptcha" id="captcha" data-callback="recaptchaCallBack" data-sitekey="6LcPp_UUAAAAAMktq4zMV2HndUcZEkh06S1ItZsL"></div>
+                                    </div>
+
                                     <div class="btn-submit">
                                         <asp:Button runat="server" ID="btnSubmit1" Text="Send" CssClass="btn-default btn-orange" UseSubmitBehavior="false" OnClientClick="return isContactValid2()" />
                                     </div>

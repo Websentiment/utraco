@@ -72,6 +72,15 @@ function isContactValid2() {
     //else {
     //    $(".spanVal").remove();
     //}
+    if ($("#hidRecaptcha").val() === "") {
+        bOk = false;
+        if (!$(".spanVal#captcha")[0]) {
+            $("<small id='captcha' class='captcha-contact help-block'>Toon aan dat u geen robot bent</small>").insertAfter(".g-recaptcha#captcha");
+        }
+    }
+    else {
+        $(".spanVal#captcha").remove();
+    }
     if (bOk) {
         __doPostBack('ctl00$ContentPlaceHolder1$btnSubmit1', '');
     } else {

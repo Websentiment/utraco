@@ -35,11 +35,20 @@
     <meta name="twitter:image" content="/UI/images/meta-icons/120x120.png" />
 
     <asp:PlaceHolder runat="server">
-        <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
         <link rel="stylesheet" property="stylesheet" type="text/css" href="/Resources/bundels/master.min.css" />
 
     </asp:PlaceHolder>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166101864-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-166101864-1');
+    </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <form runat="server" class="divGlobalForm">
@@ -254,6 +263,9 @@
             <script type="text/javascript" src='/Resources/bundels/formValidation.min.js'></script>
             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
             <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    document.getElementById("hidRecaptcha").value = ""
+                })
                 function recaptchaCallBack(token) {
                     document.getElementById("hidRecaptcha").value = token;
                 }
@@ -263,7 +275,7 @@
         <asp:ContentPlaceHolder ID="head" runat="server">
         </asp:ContentPlaceHolder>
         
-        <asp:HiddenField runat="server" ID="hidRecaptcha" />
+        <asp:HiddenField ID="hidRecaptcha" runat="server" />
         <asp:HiddenField ID="hidLanguage" runat="server" />
 
     </form>

@@ -477,14 +477,14 @@
                 trigger: 'blur',
                 validators: {
                     notEmpty: {
-                        message: "Please fill your E-mail in"
+                        message: "Please fill your email address in"
                     },
                     emailAddress: {
                         message: "" //Dit doen anders weergeeft die automatische melding op de html5 attribute type="email"
                     },
                     regexp: {
                         regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
-                        message: "E-mail is not valid"
+                        message: "Email address is not valid"
                     }
                 }
             },

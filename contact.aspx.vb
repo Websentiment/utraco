@@ -46,6 +46,16 @@ Partial Class _Contact
             sLanguage = sDefaultLanguage.ToUpper
         End If
 
+        Try
+            Dim RC As New clsRecaptcha
+            Dim hidRecaptcha As HiddenField = Me.Master.FindControl("hidRecaptcha")
+            Dim obj As reCAPTCHA.Response = RC.validate(hidRecaptcha.Value)
+            If Not obj.success Then
+                Exit Sub
+            End If
+        Catch ex As Exception
+            Exit Sub
+        End Try
 
         iTaalID = sTaalID(sLanguage)
         Dim LI As New clsLijstItems
