@@ -80,15 +80,15 @@
                         <div class="contact-inner">
                             <div class="row">
                                 <div class="col-lg-5 col-sm-6">
-                                    <label>Your Name (required)</label>
+                                    <label class="required">Your Name </label>
                                     <div class="form-group">
                                         <asp:TextBox runat="server" ID="txtName" placeholder="Your Name" CssClass="form-control" />
                                     </div>
                                 </div>
                                 <div class="col-lg-5 offset-lg-2 col-sm-6">
-                                    <label>Your Email (required)</label>
+                                    <label class="required">Your e-mail address </label>
                                     <div class="form-group">
-                                        <asp:TextBox  runat="server" ID="txtEmail" placeholder="Your Email" CssClass="form-control" TextMode="Email" />
+                                        <asp:TextBox  runat="server" ID="txtEmail" placeholder="Your e-mail address" CssClass="form-control" TextMode="Email" />
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-sm-6">
@@ -115,16 +115,19 @@
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="row">
-                                <div class="col-lg-8">
-                                    <div class="form-box ">
-                                        <div class="form-group checkbox">
-                                            <asp:CheckBox runat="server" ID="cbPrivacy" value="check" />
-                                            <label for="cbPrivacy">Yes, I agree with the <a href="/privacy-policy" target="_blank">Privacy policy.</a></label>
+                                        <div class="col-lg-8">
+                                            <div class="required-ex">
+                                                <span>*</span> Required
+                                            </div>
+                                            <div class="form-box ">
+                                                <div class="form-group checkbox">
+                                                    <asp:CheckBox runat="server" ID="cbPrivacy" value="check" />
+                                                    <label for="cbPrivacy">Yes, I agree with the <a href="/privacy-policy" target="_blank">Privacy policy.</a></label>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
                              
-                            </div>
+                                    </div>
                                 </div>
                                 
                                 <div class="col-lg-4">

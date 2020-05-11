@@ -505,6 +505,19 @@ header {
 .contactpage label {
   font-weight: bold;
   margin: 0px auto 25px; }
+  .contactpage label.required:after {
+    content: "*";
+    color: red;
+    display: inline-block;
+    vertical-align: top; }
+
+.contactpage .required-ex {
+  font-size: 15px; }
+  .contactpage .required-ex span {
+    color: #f00;
+    margin-right: 5px;
+    font-size: 20px;
+    vertical-align: middle; }
 
 .contactpage textarea {
   resize: none; }

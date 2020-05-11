@@ -45,6 +45,26 @@
     label {
         font-weight: bold;
         margin: 0px auto 25px;
+
+        &.required {
+            &:after {
+                content: "*";
+                color: red;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .required-ex {
+        font-size: 15px;
+
+        span {
+            color: #f00;
+            margin-right: 5px;
+            font-size: 20px;
+            vertical-align: middle;
+        }
     }
 
     textarea {
