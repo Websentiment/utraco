@@ -96,7 +96,7 @@
                                     <div class="form-group">
                                         <asp:DropDownList ID="ddlSoort" runat="server" CssClass="form-control">
                                             <asp:ListItem selected="True" Text="---" Value="1"></asp:ListItem>
-                                            <asp:ListItem Text="Terugbelverzoek" Value="2"></asp:ListItem>
+                                            <asp:ListItem Text="Callback request" Value="2"></asp:ListItem>
                                         </asp:DropDownList>
                                         <span><i class="fas fa-chevron-down"></i></span>
                                     </div>
@@ -104,11 +104,11 @@
                                 <div class="col-lg-5 offset-lg-2 col-sm-6">
                                     <label>Subject</label>
                                     <div class="form-group">
-                                        <asp:TextBox runat="server" ID="txtPhone" placeholder="Subject" CssClass="form-control" TextMode="Phone"/>
+                                        <asp:TextBox runat="server" ID="txtPhone" placeholder="Subject" CssClass="form-control"/>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                     <label>Your Message</label>
+                                     <label>Your message</label>
                                     <div class="form-group">
                                         <textarea placeholder="Your Message" runat="server" id="txtMessage" class="form-control" />
                                     </div>

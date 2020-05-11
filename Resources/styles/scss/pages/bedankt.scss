@@ -22,3 +22,40 @@
         }
     }
 }
+
+.thanks {
+    padding: 75px 0;
+
+    .content {
+        -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,.17);
+        -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,.17);
+        box-shadow: 0 3px 10px 0 rgba(0,0,0,.17);
+        background: #fff;
+        margin-bottom: 30px;
+        padding: 25px;
+        color: #939393;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        line-height: 24px;
+
+        h1 {
+            padding: 20px 25px;
+            margin: -25px -25px 10px;
+            font-size: 25px;
+            display: block;
+            color: #fff;
+            background: $primary-color;
+        }
+    }
+
+    .btn-back {
+        background: linear-gradient(to right,#003576 0%,#324a9a 100%);
+        color: #f7f7f7;
+        font-size: 15px;
+        border-radius: 2px;
+        border: none;
+        padding: 15px 35px;
+        cursor: pointer;
+        font-weight: 700;
+    }
+}

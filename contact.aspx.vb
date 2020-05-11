@@ -56,7 +56,7 @@ Partial Class _Contact
             Dim email As String = LI.dr.Item("sItem1")
             sBericht = sBericht.Replace("[name]", txtName.Text)
             sBericht = sBericht.Replace("[email]", txtEmail.Text)
-            sBericht = sBericht.Replace("[phone]", txtPhone.Text)
+            sBericht = sBericht.Replace("[subject]", txtPhone.Text)
             sBericht = sBericht.Replace("[contactway]", ddlSoort.SelectedItem.Text)
             sBericht = sBericht.Replace("[message]", txtMessage.Value.Replace(Environment.NewLine, "<br />"))
 
@@ -68,7 +68,7 @@ Partial Class _Contact
             Dim sBCC As String = LI.dr.Item("sItem5").replace("[email]", email)
             Dim sOnderwerp As String = LI.dr.Item("sSubTitle").replace("[email]", email)
             Dim sBijlagen As String = ""
-            Dim sInfo As String = txtName.Text
+            Dim sInfo As String = "Utraco Holland B.V."
 
             Dim M As New clsMail
             Dim sTemplate As String = M.sHtml("~/EmailTemplates/mail.aspx")
@@ -84,7 +84,7 @@ Partial Class _Contact
                 email = LI.dr.Item("sItem1")
                 sBericht = sBericht.Replace("[name]", txtName.Text)
                 sBericht = sBericht.Replace("[email]", txtEmail.Text)
-                sBericht = sBericht.Replace("[phone]", txtPhone.Text)
+                sBericht = sBericht.Replace("[subject]", txtPhone.Text)
                 sBericht = sBericht.Replace("[contactway]", ddlSoort.SelectedItem.Text)
                 sBericht = sBericht.Replace("[message]", txtMessage.Value.Replace(Environment.NewLine, "<br />"))
 
@@ -97,7 +97,7 @@ Partial Class _Contact
                 sBijlagen = ""
 
                 Dim U As New clsUtility
-                sInfo = "Utraco Holland"
+                sInfo = "Utraco Holland B.V."
 
                 Dim sTemplate1 As String = M.sHtml("~/EmailTemplates/mail.aspx")
                 sTemplate1 = sTemplate1.Replace("[subject]", sOnderwerp)
@@ -106,7 +106,7 @@ Partial Class _Contact
                 iMailID = M.iscMail(0, iPartijIDBeheerder, "versturen", sType, "", sVan, sNaar, sCC, sBCC, sOnderwerp, sTemplate1, sBijlagen, "", sInfo, Now)
 
                 Dim P As New clsPage
-                Response.Redirect(P.sPageUrlByGuid(sLanguage, "a7e87160-9d02-49f9-bf33-f73e736d0be1"))
+                Response.Redirect(P.sPageUrlByGuid(sLanguage, "3da66034-a11f-4e5d-ba2b-6f2f69953ed5"))
             Else
 
             End If

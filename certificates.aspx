@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ceritifcates.aspx.vb" MasterPageFile="~/page.master" Inherits="_ceritifcates" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="certificates.aspx.vb" MasterPageFile="~/page.master" Inherits="_ceritifcates" %>
 
 <%@ Import Namespace="System.Web.Optimization" %>
 
@@ -17,7 +17,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="producth1">Ceritifcates</h1>
+                    <h1 class="producth1">
+                        <asp:Literal ID="ltlTitle" runat="server" /></h1>
                 </div>
             </div>
         </div>
@@ -27,23 +28,17 @@
             <div class="row">
                 <div class="col-12">
                     <br />
-                    <h3>Our ceritifcates</h3>
+                    <h3><asp:Literal ID="ltlSubTitle" runat="server" /></h3>
                 </div>
                
                 <div class="col-sm-6 offset-sm-3">
-                     <br />
-                    <p>
-                       Lorem ipsum is een opvultekst die drukkers, zetters,
-                        grafisch ontwerpers en dergelijken gebruiken om te kijken hoe een opmaak er grafisch uitziet.
-                        De eerste woorden van de tekst luiden doorgaans
-                    </p>
                     <br />
-                    <a href="#">Click on the logo's below for more information.</a>
+                    <asp:Literal ID="ltlText" runat="server" />
                 </div>
                 <ul class="ceritifcatesimageul">
-                   <li> <img class="ceritifcatesimage" src="resources//img/ISO9001 4KL Nederlands Certificatie Kantoor (NCK).JPG" alt="Alternate Text" /></li>
-                   <li> <img class="ceritifcatesimage" src="resources//img/ISO9001 4KL Nederlands Certificatie Kantoor (NCK).JPG" alt="Alternate Text" /></li>
-                   <li> <img class="ceritifcatesimage" src="resources//img/ISO9001 4KL Nederlands Certificatie Kantoor (NCK).JPG" alt="Alternate Text" /></li>
+                   <li><asp:Literal ID="ltlLogo1" runat="server" /></li>
+                   <li><asp:Literal ID="ltlLogo2" runat="server" /></li>
+                   <li><asp:Literal ID="ltlLogo3" runat="server" /></li>
                 </ul>
             </div>
         </div>

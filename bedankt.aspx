@@ -10,9 +10,8 @@
                 <div class="col-sm-8 offset-sm-2">
                     <div class="content">
                         <asp:Literal ID="ltlBedankt" runat="server" />
-                        <br />
-                        <a href="/" class="btn-default"><asp:Literal runat="server" Text='<%$ Resources:Resource, bedanktTerug %>' /></a>
                     </div>
+                    <a href="/" class="btn-back"><asp:Literal runat="server" Text='<%$ Resources:Resource, bedanktTerug %>' /></a>
                 </div>
             </div>
         </div>

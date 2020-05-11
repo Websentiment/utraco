@@ -15,6 +15,10 @@
         margin-bottom: 25px;
     }
 
+    b, strong{
+        font-weight: bold;
+    }
+
     a {
         color: $blue;
         text-decoration: underline !important;
